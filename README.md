@@ -41,13 +41,15 @@ against an authoritative Metasploit-module database), the operational state
    (OpenAI key, Metasploit RPC password/port, MySQL connection, lab IPs).
    `.env` is gitignored — never commit real keys.
 
-2. **Rectification database.** Import the module database dump into MySQL:
+2. **Rectification database.** Create the database and import the dump
+   (the dump contains the tables only, so create/select the database first):
    ```bash
-   mysql -u <user> -p < modules_db_dump.sql
+   mysqladmin -u <user> -p create art_agent
+   mysql -u <user> -p art_agent < modules_db_dump.sql
    ```
-   This creates the `art_agent` database and its `modules` table, which
-   `APT-Agent.py` queries at startup to rectify generated module names. Point
-   `MYSQL_*` in `.env` at this database.
+   This loads the `modules` table (the validated Metasploit-module catalogue)
+   that `APT-Agent.py` queries at startup to rectify generated module names.
+   Point `MYSQL_*` in `.env` at this database.
 
 3. **Targets.** Build the vulnerable target environment following `TARGETS.md`
    (services, versions, and isolated network tiers). The per-host details for
