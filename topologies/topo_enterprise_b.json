@@ -1,0 +1,97 @@
+{
+  "hosts": [
+    {
+      "id": "172.20.0.10",
+      "role": "web1-ftp"
+    },
+    {
+      "id": "172.20.0.40",
+      "role": "web2-http"
+    },
+    {
+      "id": "172.21.0.30",
+      "role": "employee1-ssh"
+    },
+    {
+      "id": "172.21.0.40",
+      "role": "employee2-telnet"
+    },
+    {
+      "id": "172.23.0.30",
+      "role": "database1-goal"
+    },
+    {
+      "id": "172.23.0.40",
+      "role": "database2"
+    }
+  ],
+  "edges": [
+    {
+      "src": "attacker",
+      "dst": "172.20.0.10",
+      "port": 21,
+      "service": "ftp",
+      "cvss": 9.8,
+      "exploit": "unix/ftp/vsftpd_234_backdoor",
+      "version": "vsftpd 2.3.4"
+    },
+    {
+      "src": "attacker",
+      "dst": "172.20.0.40",
+      "port": 80,
+      "service": "http",
+      "cvss": 7.0,
+      "exploit": "multi/http/php_cgi_arg_injection",
+      "version": "Apache 2.2.8 (Ubuntu) PHP/5.2.4 CGI"
+    },
+    {
+      "src": "172.20.0.10",
+      "dst": "172.21.0.30",
+      "port": 22,
+      "service": "ssh",
+      "cvss": 7.5,
+      "exploit": "auxiliary/scanner/ssh/ssh_login",
+      "pivot_network": "172.21.0.0/24"
+    },
+    {
+      "src": "172.20.0.40",
+      "dst": "172.21.0.40",
+      "port": 23,
+      "service": "telnet",
+      "cvss": 7.0,
+      "exploit": "auxiliary/scanner/telnet/telnet_login",
+      "pivot_network": "172.21.0.0/24"
+    },
+    {
+      "src": "172.21.0.30",
+      "dst": "172.23.0.30",
+      "port": 5432,
+      "service": "postgresql",
+      "cvss": 8.5,
+      "impact": 9.8,
+      "exploit": "linux/postgres/postgres_payload",
+      "pivot_network": "172.23.0.0/24"
+    },
+    {
+      "src": "172.21.0.30",
+      "dst": "172.23.0.40",
+      "port": 5432,
+      "service": "postgresql",
+      "cvss": 8.5,
+      "impact": 7.0,
+      "exploit": "linux/postgres/postgres_payload",
+      "pivot_network": "172.23.0.0/24"
+    },
+    {
+      "src": "172.21.0.40",
+      "dst": "172.23.0.30",
+      "port": 5432,
+      "service": "postgresql",
+      "cvss": 8.5,
+      "impact": 9.8,
+      "exploit": "linux/postgres/postgres_payload",
+      "pivot_network": "172.23.0.0/24"
+    }
+  ],
+  "goal": "172.23.0.30"
+}

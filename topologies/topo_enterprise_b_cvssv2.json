@@ -1,0 +1,99 @@
+{
+  "hosts": [
+    {
+      "id": "172.20.0.10",
+      "role": "web1-ftp"
+    },
+    {
+      "id": "172.20.0.50",
+      "role": "web2-drupal"
+    },
+    {
+      "id": "172.21.0.30",
+      "role": "employee1-distcc"
+    },
+    {
+      "id": "172.21.0.40",
+      "role": "employee2-drupal"
+    },
+    {
+      "id": "172.23.0.30",
+      "role": "intranet-twiki-goal"
+    },
+    {
+      "id": "172.23.0.40",
+      "role": "fileserver2-samba"
+    }
+  ],
+  "edges": [
+    {
+      "src": "attacker",
+      "dst": "172.20.0.10",
+      "port": 21,
+      "service": "ftp",
+      "version": "vsftpd 2.3.4",
+      "cvss": 10.0,
+      "exploit": "unix/ftp/vsftpd_234_backdoor"
+    },
+    {
+      "src": "attacker",
+      "dst": "172.20.0.50",
+      "port": 80,
+      "service": "http",
+      "version": "Drupal 7.57",
+      "cvss": 7.5,
+      "exploit": "unix/webapp/drupal_drupalgeddon2"
+    },
+    {
+      "src": "172.20.0.10",
+      "dst": "172.21.0.30",
+      "port": 3632,
+      "service": "distcc",
+      "version": "distcc 2.x",
+      "cvss": 9.3,
+      "exploit": "unix/misc/distcc_exec",
+      "pivot_network": "172.21.0.0/24"
+    },
+    {
+      "src": "172.20.0.50",
+      "dst": "172.21.0.40",
+      "port": 80,
+      "service": "http",
+      "version": "Drupal 7.57",
+      "cvss": 7.5,
+      "exploit": "unix/webapp/drupal_drupalgeddon2",
+      "pivot_network": "172.21.0.0/24"
+    },
+    {
+      "src": "172.21.0.30",
+      "dst": "172.23.0.30",
+      "port": 6667,
+      "service": "irc",
+      "version": "UnrealIRCd 3.2.8.1 (Metasploitable2)",
+      "cvss": 7.5,
+      "exploit": "unix/irc/unreal_ircd_3281_backdoor",
+      "pivot_network": "172.23.0.0/24"
+    },
+    {
+      "src": "172.21.0.30",
+      "dst": "172.23.0.40",
+      "port": 445,
+      "service": "samba",
+      "version": "Samba 3.0.20",
+      "cvss": 6.0,
+      "exploit": "multi/samba/usermap_script",
+      "pivot_network": "172.23.0.0/24"
+    },
+    {
+      "src": "172.21.0.40",
+      "dst": "172.23.0.30",
+      "port": 6667,
+      "service": "irc",
+      "version": "UnrealIRCd 3.2.8.1 (Metasploitable2)",
+      "cvss": 7.5,
+      "exploit": "unix/irc/unreal_ircd_3281_backdoor",
+      "pivot_network": "172.23.0.0/24"
+    }
+  ],
+  "goal": "172.23.0.30"
+}

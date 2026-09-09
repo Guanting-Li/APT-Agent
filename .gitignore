@@ -1,0 +1,15 @@
+# Secrets — never commit real keys
+.env
+*.key
+*API*Key*
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+
+# Runtime outputs
+results/
+logs/
+*.log

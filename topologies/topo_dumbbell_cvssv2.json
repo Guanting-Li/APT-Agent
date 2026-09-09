@@ -1,0 +1,48 @@
+{
+  "hosts": [
+    {
+      "id": "172.20.0.10",
+      "role": "dmz-ftp"
+    },
+    {
+      "id": "172.23.0.30",
+      "role": "internal-twiki-decoy"
+    },
+    {
+      "id": "172.21.0.20",
+      "role": "internal-irc-goal"
+    }
+  ],
+  "edges": [
+    {
+      "src": "attacker",
+      "dst": "172.20.0.10",
+      "port": 21,
+      "service": "ftp",
+      "version": "vsftpd 2.3.4",
+      "cvss": 10.0,
+      "exploit": "unix/ftp/vsftpd_234_backdoor"
+    },
+    {
+      "src": "172.20.0.10",
+      "dst": "172.23.0.30",
+      "port": 6667,
+      "service": "irc",
+      "version": "UnrealIRCd 3.2.8.1 (Metasploitable2)",
+      "cvss": 7.5,
+      "exploit": "unix/irc/unreal_ircd_3281_backdoor",
+      "pivot_network": "172.23.0.0/24"
+    },
+    {
+      "src": "172.20.0.10",
+      "dst": "172.21.0.20",
+      "port": 6667,
+      "service": "irc",
+      "version": "UnrealIRCd 3.2.8.1",
+      "cvss": 7.5,
+      "exploit": "unix/irc/unreal_ircd_3281_backdoor",
+      "pivot_network": "172.21.0.0/24"
+    }
+  ],
+  "goal": "172.21.0.20"
+}

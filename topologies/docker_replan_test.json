@@ -1,0 +1,50 @@
+{
+  "_comment": "Replanning topology. The composite strategy selects the direct attacker→H2 path first (CVSS=9.8, low weight). H2 is on an isolated Docker internal network and is unreachable from the attacker directly (iptables OUTPUT DROP on 172.21.0.0/24), so the direct hop fails. The orchestrator then removes that edge and replans via attacker→H1→H2 (the pivot path), which succeeds.",
+  "hosts": [
+    {
+      "id":   "172.20.0.10",
+      "os":   "Linux",
+      "role": "h1-vsftpd"
+    },
+    {
+      "id":   "172.21.0.20",
+      "os":   "Linux",
+      "role": "h2-unrealirc"
+    }
+  ],
+  "edges": [
+    {
+      "src":     "attacker",
+      "dst":     "172.20.0.10",
+      "exploit": "vsftpd_234_backdoor",
+      "cvss":    7.0,
+      "impact":  7.0,
+      "port":    21,
+      "service": "ftp",
+      "version": "vsftpd 2.3.4"
+    },
+    {
+      "src":     "attacker",
+      "dst":     "172.21.0.20",
+      "exploit": "unreal_ircd_3281_backdoor",
+      "cvss":    9.8,
+      "impact":  9.8,
+      "port":    6667,
+      "service": "irc",
+      "version": "UnrealIRCd 3.2.8.1"
+    },
+    {
+      "src":          "172.20.0.10",
+      "dst":          "172.21.0.20",
+      "exploit":      "unreal_ircd_3281_backdoor",
+      "cvss":         9.8,
+      "impact":       9.8,
+      "port":         6667,
+      "service":      "irc",
+      "version":      "UnrealIRCd 3.2.8.1",
+      "pivot_network": "172.21.0.0/24",
+      "pivot_src_ip":  "172.21.0.10"
+    }
+  ],
+  "goal": "172.21.0.20"
+}

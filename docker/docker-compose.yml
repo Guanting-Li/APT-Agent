@@ -1,0 +1,253 @@
+name: apt_test
+
+# ── Networks ──────────────────────────────────────────────────────────────────
+# apt_dmz      : externally reachable (attacker can connect directly)
+# apt_internal : isolated subnet 1  (requires pivot through a DMZ host)
+# apt_deep     : isolated subnet 2  (requires 2-level pivot through DMZ→internal)
+# apt_db       : isolated DB tier   (reachable only from apt_internal)
+
+networks:
+  apt_dmz:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+          gateway: 172.20.0.1
+
+  apt_internal:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 172.21.0.0/24
+          gateway: 172.21.0.1
+
+  apt_deep:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 172.22.0.0/24
+          gateway: 172.22.0.1
+
+  apt_db:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 172.23.0.0/24
+          gateway: 172.23.0.1
+
+
+services:
+
+  # ── Existing hosts (pivot / 3-hop / branch tests) ─────────────────────────
+
+  h1_vsftpd:
+    build:
+      context: ./vsftpd234
+      dockerfile: Dockerfile
+    image: apt_test_vsftpd:latest
+    container_name: apt_h1_vsftpd
+    hostname: h1
+    networks:
+      apt_dmz:
+        ipv4_address: 172.20.0.10
+      apt_internal:
+        ipv4_address: 172.21.0.10
+    expose:
+      - "21"
+      - "6200"
+    restart: unless-stopped
+
+  h2_unrealirc:
+    build:
+      context: ./unrealirc
+      dockerfile: Dockerfile
+    image: apt_test_unrealirc:latest
+    container_name: apt_h2_unrealirc
+    hostname: h2
+    networks:
+      apt_internal:
+        ipv4_address: 172.21.0.20
+      apt_deep:
+        ipv4_address: 172.22.0.20
+    expose:
+      - "6667"
+    restart: unless-stopped
+
+  h3_unrealirc:
+    build:
+      context: ./unrealirc
+      dockerfile: Dockerfile
+    image: apt_test_unrealirc:latest
+    container_name: apt_h3_unrealirc
+    hostname: h3
+    networks:
+      apt_deep:
+        ipv4_address: 172.22.0.30
+    environment:
+      - FLAG=flag{deep_pivot_h3_decoy}
+    expose:
+      - "6667"
+    restart: unless-stopped
+
+  h4_unrealirc:
+    build:
+      context: ./unrealirc
+      dockerfile: Dockerfile
+    image: apt_test_unrealirc:latest
+    container_name: apt_h4_unrealirc
+    hostname: h4
+    networks:
+      apt_deep:
+        ipv4_address: 172.22.0.40
+    environment:
+      - FLAG=flag{deep_pivot_h4_target_pwned}
+    expose:
+      - "6667"
+    restart: unless-stopped
+
+  # ── SSH ────────────────────────────────────────────────────────────────────
+  # Real OpenSSH with weak credentials (msfadmin:msfadmin, root:root).
+  # Metasploit: auxiliary/scanner/ssh/ssh_login + shell_to_meterpreter
+
+  h_ssh_dmz:
+    build:
+      context: ./ssh
+      dockerfile: Dockerfile
+    image: apt_test_ssh:latest
+    container_name: apt_h_ssh_dmz
+    hostname: h-ssh-dmz
+    networks:
+      apt_dmz:
+        ipv4_address: 172.20.0.30
+    environment:
+      - FLAG=flag{ssh_dmz_pwned}
+    expose:
+      - "22"
+    restart: unless-stopped
+
+  h_ssh_internal:
+    build:
+      context: ./ssh
+      dockerfile: Dockerfile
+    image: apt_test_ssh:latest
+    container_name: apt_h_ssh_internal
+    hostname: h-ssh-internal
+    networks:
+      apt_internal:
+        ipv4_address: 172.21.0.30
+      apt_db:
+        ipv4_address: 172.23.0.10
+    environment:
+      - FLAG=flag{ssh_internal_employee_pwned}
+    expose:
+      - "22"
+    restart: unless-stopped
+
+  # ── Telnet ─────────────────────────────────────────────────────────────────
+  # busybox telnetd with weak credentials (msfadmin:msfadmin).
+  # Metasploit: auxiliary/scanner/telnet/telnet_login
+
+  h_telnet_internal:
+    build:
+      context: ./telnet
+      dockerfile: Dockerfile
+    image: apt_test_telnet:latest
+    container_name: apt_h_telnet_internal
+    hostname: h-telnet-internal
+    networks:
+      apt_internal:
+        ipv4_address: 172.21.0.40
+      apt_db:
+        ipv4_address: 172.23.0.20
+    environment:
+      - FLAG=flag{telnet_employee_pwned}
+    expose:
+      - "23"
+    restart: unless-stopped
+
+  # ── PostgreSQL ─────────────────────────────────────────────────────────────
+  # Real PostgreSQL 16 with password "postgres".
+  # Metasploit: auxiliary/scanner/postgres/postgres_login
+  #             exploit/multi/postgres/postgres_copy_from_program_cmd_exec
+
+  h_postgres_db1:
+    build:
+      context: ./postgres
+      dockerfile: Dockerfile
+    image: apt_test_postgres:latest
+    container_name: apt_h_postgres_db1
+    hostname: h-postgres-db1
+    networks:
+      apt_db:
+        ipv4_address: 172.23.0.30
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+      - FLAG=flag{postgresql_db1_goal_pwned}
+    expose:
+      - "5432"
+    restart: unless-stopped
+
+  h_postgres_db2:
+    build:
+      context: ./postgres
+      dockerfile: Dockerfile
+    image: apt_test_postgres:latest
+    container_name: apt_h_postgres_db2
+    hostname: h-postgres-db2
+    networks:
+      apt_db:
+        ipv4_address: 172.23.0.40
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+      - FLAG=flag{postgresql_db2_pwned}
+    expose:
+      - "5432"
+    restart: unless-stopped
+
+  # ── HTTP / Apache mod_cgi (Shellshock, CVE-2014-6271) ─────────────────────
+  # Metasploit: exploit/multi/http/apache_mod_cgi_bash_env_exec
+
+  h_http_dmz:
+    build:
+      context: ./http_modcgi
+      dockerfile: Dockerfile
+    image: apt_test_http_modcgi:latest
+    container_name: apt_h_http_dmz
+    hostname: h-http-dmz
+    networks:
+      apt_dmz:
+        ipv4_address: 172.20.0.40
+      apt_internal:
+        ipv4_address: 172.21.0.50
+    environment:
+      - FLAG=flag{http_shellshock_dmz_pwned}
+    expose:
+      - "80"
+    restart: unless-stopped
+
+  # ── Samba / usermap_script (CVE-2007-2447) ────────────────────────────────
+  # Metasploit: exploit/multi/samba/usermap_script
+
+  h_samba_internal:
+    build:
+      context: ./samba
+      dockerfile: Dockerfile
+    image: apt_test_samba:latest
+    container_name: apt_h_samba_internal
+    hostname: h-samba-internal
+    networks:
+      apt_db:
+        ipv4_address: 172.23.0.50
+    environment:
+      - FLAG=flag{samba_usermap_goal_pwned}
+    expose:
+      - "139"
+      - "445"
+    restart: unless-stopped

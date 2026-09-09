@@ -1,0 +1,732 @@
+   0    exploit/windows/ftp/3cdaemon_ftp_user                                              2005-01-04       average    Yes    3Com 3CDaemon 2.0 FTP Username Overflow
+   1    exploit/windows/scada/igss9_igssdataserver_rename                                  2011-03-24       normal     No     7-Technologies IGSS 9 IGSSdataServer .RMS Rename Buffer Overflow
+   2    auxiliary/dos/scada/igss9_dataserver                                               2011-12-20       normal     No     7-Technologies IGSS 9 IGSSdataServer.exe DoS
+   3    exploit/windows/scada/igss9_igssdataserver_listall                                 2011-03-24       good       No     7-Technologies IGSS IGSSdataServer.exe Stack Buffer Overflow
+   4    exploit/windows/fileformat/a_pdf_wav_to_mp3                                        2010-08-17       normal     No     A-PDF WAV to MP3 v1.0.0 Buffer Overflow
+   5    exploit/windows/ftp/aasync_list_reply                                              2010-10-12       good       No     AASync v2.2.1.0 (Win32) Stack Buffer Overflow (LIST)
+   6    exploit/windows/scada/abb_wserver_exec                                             2013-04-05       excellent  Yes    ABB MicroSCADA wserver.exe Remote Code Execution
+   7    exploit/windows/fileformat/abbs_amp_lst                                            2013-06-30       normal     No     ABBS Audio Media Player .LST Buffer Overflow
+   8    exploit/windows/sip/aim_triton_cseq                                                2006-07-10       great      No     AIM Triton 1.0.4 CSeq Buffer Overflow
+   9    exploit/aix/rpc_cmsd_opcode21                                                      2009-10-07       great      No     AIX Calendar Manager Service Daemon (rpc.cmsd) Opcode 21 Buffer Overflow
+   10   exploit/windows/misc/allmediaserver_bof                                            2012-07-04       normal     No     ALLMediaServer 0.8 Buffer Overflow
+   11   exploit/windows/misc/cve_2022_28381_allmediaserver_bof                             2022-04-01       good       No     ALLMediaServer 1.6 SEH Buffer Overflow
+   12   exploit/windows/fileformat/aol_phobos_bof                                          2010-01-20       average    No     AOL 9.5 Phobos.Playlist Import() Stack-based Buffer Overflow
+   13   exploit/windows/fileformat/aol_desktop_linktag                                     2011-01-31       normal     No     AOL Desktop 9.6 RTX Buffer Overflow
+   14   exploit/windows/browser/asus_net4switch_ipswcom                                    2012-02-17       normal     No     ASUS Net4Switch ipswcom.dll ActiveX Stack Buffer Overflow
+   15   exploit/linux/http/atutor_filemanager_traversal                                    2016-03-01       excellent  Yes    ATutor 2.2.1 Directory Traversal / Remote Code Execution
+   16   exploit/multi/http/atutor_sqli                                                     2016-03-01       excellent  Yes    ATutor 2.2.1 SQL Injection / Remote Code Execution
+   17   exploit/multi/http/atutor_upload_traversal                                         2019-05-17       excellent  Yes    ATutor 2.2.4 - Directory Traversal / Remote Code Execution,
+   18   exploit/windows/ftp/ability_server_stor                                            2004-10-22       normal     Yes    Ability Server 2.34 STOR Command Stack Buffer Overflow
+   19   exploit/windows/ftp/absolute_ftp_list_bof                                          2011-11-09       normal     No     AbsoluteFTP 1.9.6 - 2.2.10 LIST Command Remote Buffer Overflow
+   20   exploit/windows/misc/actfax_raw_server_bof                                         2013-02-05       normal     No     ActFax 5.01 RAW Server Buffer Overflow
+   21   exploit/windows/fileformat/actfax_import_users_bof                                 2012-08-28       normal     No     ActiveFax (ActFax) 4.3 Client Importer Buffer Overflow
+   22   exploit/windows/browser/zenworks_helplauncher_exec                                 2011-10-19       normal     No     AdminStudio LaunchHelp.dll ActiveX Arbitrary Code Execution
+   23   exploit/windows/fileformat/adobe_collectemailinfo                                  2008-02-08       good       No     Adobe Collab.collectEmailInfo() Buffer Overflow
+   24   exploit/windows/browser/adobe_geticon                                              2009-03-24       good       No     Adobe Collab.getIcon() Buffer Overflow
+   25   exploit/windows/fileformat/adobe_geticon                                           2009-03-24       good       No     Adobe Collab.getIcon() Buffer Overflow
+   26   exploit/windows/browser/adobe_media_newplayer                                      2009-12-14       good       No     Adobe Doc.media.newPlayer Use After Free Vulnerability
+   27   exploit/windows/fileformat/adobe_media_newplayer                                   2009-12-14       good       No     Adobe Doc.media.newPlayer Use After Free Vulnerability
+   28   exploit/windows/browser/adobe_flashplayer_flash10o                                 2011-04-11       normal     No     Adobe Flash Player 10.2.153.1 SWF Memory Corruption Vulnerability
+   29   exploit/windows/browser/adobe_flash_otf_font                                       2012-08-09       normal     No     Adobe Flash Player 11.3 Kern Table Parsing Integer Overflow
+   30   exploit/windows/fileformat/adobe_illustrator_v14_eps                               2009-12-03       great      No     Adobe Illustrator CS4 v14.0.0
+   31   exploit/multi/misc/indesign_server_soap                                            2012-11-11       excellent  Yes    Adobe IndesignServer 5.5 SOAP Server Arbitrary Script Execution
+   32   exploit/windows/browser/adobe_utilprintf                                           2008-02-08       good       No     Adobe util.printf() Buffer Overflow
+   33   exploit/windows/fileformat/adobe_utilprintf                                        2008-02-08       good       No     Adobe util.printf() Buffer Overflow
+   34   auxiliary/gather/advantech_webaccess_creds                                         2017-01-21       normal     No     Advantech WebAccess 8.1 Post Authentication Credential Collector
+   35   auxiliary/admin/scada/advantech_webaccess_dbvisitor_sqli                           2014-04-08       normal     Yes    Advantech WebAccess DBVisitor.dll ChartThemeConfig SQL Injection
+   36   exploit/windows/browser/advantech_webaccess_dvs_getcolor                           2014-07-17       normal     No     Advantech WebAccess dvs.ocx GetColor Buffer Overflow
+   37   exploit/unix/webapp/aerohive_netconfig_lfi_log_poison_rce                          2020-02-17       excellent  Yes    Aerohive NetConfig 10.0r8a LFI and log poisoning to RCE
+   38   exploit/windows/misc/ahsay_backup_fileupload                                       2019-06-01       excellent  Yes    Ahsay Backup v7.x-v8.1.1.50 (authenticated) file upload
+   39   exploit/multi/http/ajaxplorer_checkinstall_exec                                    2010-04-04       excellent  Yes    AjaXplorer checkInstall.php Remote Command Execution
+   40   exploit/windows/tftp/attftp_long_filename                                          2006-11-27       average    No     Allied Telesyn TFTP Server 1.9 Long Filename Overflow
+   41   exploit/multi/local/allwinner_backdoor                                             2016-04-30       excellent  Yes    Allwinner 3.4 Legacy Kernel Local Privilege Escalation
+   42   exploit/windows/fileformat/altap_salamander_pdb                                    2007-06-19       good       No     Altap Salamander 2.5 PE Viewer Buffer Overflow
+   43   exploit/windows/browser/amaya_bdo                                                  2009-01-28       normal     No     Amaya Browser v11.0 'bdo' Tag Overflow
+   44   exploit/windows/http/amlibweb_webquerydll_app                                      2010-08-03       normal     Yes    Amlibweb NetOpacs webquery.dll Stack Buffer Overflow
+   45   post/android/manage/remove_lock                                                    2013-10-11       normal     No     Android Settings Remove Device Locks (4.0-4.3)
+   46   exploit/multi/http/apache_normalize_path_rce                                       2021-05-10       excellent  Yes    Apache 2.4.49/2.4.50 Traversal RCE
+   47   auxiliary/scanner/http/apache_normalize_path                                       2021-05-10       normal     No     Apache 2.4.49/2.4.50 Traversal RCE scanner
+   48   exploit/windows/http/apache_activemq_traversal_upload                              2015-08-19       excellent  Yes    Apache ActiveMQ 5.x-5.11.1 Directory Traversal Shell Upload
+   49   exploit/linux/http/apache_airflow_dag_rce                                          2020-07-14       excellent  Yes    Apache Airflow 1.10.10 - Example DAG Remote Code Execution
+   50   auxiliary/scanner/http/axis_local_file_include                                                      normal     No     Apache Axis2 v1.4.1 Local File Inclusion
+   51   exploit/linux/http/apache_druid_js_rce                                             2021-01-21       excellent  Yes    Apache Druid 0.20.0 Remote Command Execution
+   52   exploit/linux/smtp/apache_james_exec                                               2015-10-01       normal     Yes    Apache James Server 2.3.2 Insecure User Creation Arbitrary File Write
+   53   exploit/multi/http/shiro_rememberme_v124_deserialize                               2016-06-07       excellent  No     Apache Shiro v1.2.4 Cookie RememberME Deserial RCE
+   54   exploit/windows/http/apache_modjk_overflow                                         2007-03-02       great      Yes    Apache mod_jk 1.2.20 Buffer Overflow
+   55   auxiliary/dos/windows/appian/appian_bpm                                            2007-12-17       normal     No     Appian Enterprise Business Suite 5.6 SP1 DoS
+   56   exploit/windows/browser/apple_itunes_playlist                                      2005-01-11       normal     No     Apple ITunes 4.7 Playlist Buffer Overflow
+   57   exploit/multi/browser/itms_overflow                                                2009-06-01       great      No     Apple OS X iTunes 8.1.1 ITMS Overflow
+   58   exploit/windows/browser/apple_quicktime_rtsp                                       2007-01-01       normal     No     Apple QuickTime 7.1.3 RTSP URI Buffer Overflow
+   59   exploit/windows/misc/apple_quicktime_rtsp_response                                 2007-11-23       normal     No     Apple QuickTime 7.3 RTSP Response Header Buffer Overflow
+   60   exploit/windows/browser/apple_quicktime_smil_debug                                 2010-08-12       good       No     Apple QuickTime 7.6.6 Invalid SMIL URI Buffer Overflow
+   61   exploit/windows/browser/apple_quicktime_marshaled_punk                             2010-08-30       great      No     Apple QuickTime 7.6.7 _Marshaled_pUnk Code Execution
+   62   exploit/windows/browser/apple_quicktime_mime_type                                  2012-11-07       normal     No     Apple QuickTime 7.7.2 MIME Type Buffer Overflow
+   63   exploit/windows/browser/apple_quicktime_texml_font_table                           2012-11-07       normal     No     Apple QuickTime 7.7.2 TeXML Style Element font-table Field Stack Buffer Overflow
+   64   evasion/windows/applocker_evasion_install_util                                                      normal     No     Applocker Evasion - .NET Framework Installation Utility
+   65   evasion/windows/applocker_evasion_regasm_regsvcs                                                    normal     No     Applocker Evasion - Microsoft .NET Assembly Registration Utility
+   66   auxiliary/scanner/http/enum_wayback                                                                 normal     No     Archive.org Stored Domain URLs
+   67   exploit/linux/http/vap2500_tools_command_exec                                      2014-11-25       normal     Yes    Arris VAP2500 tools_command.php Command Execution
+   68   exploit/linux/http/artica_proxy_auth_bypass_service_cmds_peform_command_injection  2020-08-09       excellent  Yes    Artica proxy 4.30.000000 Auth Bypass service-cmds-peform Command Injection
+   69   exploit/windows/browser/ask_shortformat                                            2007-09-24       normal     No     Ask.com Toolbar askBar.dll ActiveX Control Buffer Overflow
+   70   exploit/windows/fileformat/audio_wkstn_pls                                         2009-12-08       good       No     Audio Workstation 6.4.2.4.3 pls Buffer Overflow
+   71   exploit/windows/fileformat/audio_coder_m3u                                         2013-05-01       normal     No     AudioCoder .M3U Buffer Overflow
+   72   exploit/windows/fileformat/audiotran_pls                                           2010-01-09       good       No     Audiotran 1.4.1 (PLS File) Stack Buffer Overflow
+   73   exploit/windows/http/avaya_ccr_imageupload_exec                                    2012-06-28       excellent  No     Avaya IP Office Customer Call Reporter ImageUpload.ashx Remote Command Execution
+   74   exploit/windows/misc/avidphoneticindexer                                           2011-11-29       normal     No     Avid Media Composer 5.5 - Avid Phonetic Indexer Buffer Overflow
+   75   exploit/windows/fileformat/aviosoft_plf_buf                                        2011-11-09       good       No     Aviosoft Digital TV Player Professional 1.0 Stack Buffer Overflow
+   76   exploit/windows/browser/awingsoft_winds3d_sceneurl                                 2009-11-14       excellent  No     AwingSoft Winds3D Player 3.5 SceneURL Download and Execute
+   77   exploit/linux/http/axis_srv_parhand_rce                                            2018-06-18       excellent  Yes    Axis Network Camera .srv-to-parhand RCE
+   78   exploit/windows/fileformat/bsplayer_m3u                                            2010-01-07       normal     No     BS.Player 2.57 Buffer Overflow (Unicode SEH)
+   79   exploit/windows/http/badblue_ext_overflow                                          2003-04-20       great      Yes    BadBlue 2.5 EXT.dll Buffer Overflow
+   80   exploit/windows/http/badblue_passthru                                              2007-12-10       great      No     BadBlue 2.72b PassThru Buffer Overflow
+   81   exploit/windows/browser/baofeng_storm_onbeforevideodownload                        2009-04-30       normal     No     BaoFeng Storm mps.dll ActiveX OnBeforeVideoDownload Buffer Overflow
+   82   exploit/linux/http/wepresent_cmd_injection                                         2019-04-30       excellent  Yes    Barco WePresent file_transfer.cgi Command Injection
+   83   exploit/unix/webapp/barracuda_img_exec                                             2005-09-01       excellent  Yes    Barracuda IMG.PL Remote Command Execution
+   84   exploit/unix/webapp/basilic_diff_exec                                              2012-06-28       excellent  Yes    Basilic 1.5.14 diff.php Arbitrary Command Execution
+   85   auxiliary/dos/scada/beckhoff_twincat                                               2011-09-13       normal     No     Beckhoff TwinCAT SCADA PLC 2.11.0.2004 DoS
+   86   exploit/windows/fileformat/beetel_netconfig_ini_bof                                2013-10-12       normal     No     Beetel Connection Manager NetConfig.ini Buffer Overflow
+   87   exploit/linux/http/belkin_login_bof                                                2014-05-09       normal     Yes    Belkin Play N750 login.cgi Buffer Overflow
+   88   exploit/windows/misc/bigant_server                                                 2008-04-15       average    No     BigAnt Server 2.2 Buffer Overflow
+   89   exploit/windows/misc/bigant_server_250                                             2008-04-15       great      No     BigAnt Server 2.50 SP1 Buffer Overflow
+   90   exploit/windows/misc/bigant_server_usv                                             2009-12-29       great      No     BigAnt Server 2.52 USV Buffer Overflow
+   91   auxiliary/scanner/ftp/bison_ftp_traversal                                          2015-09-28       normal     Yes    BisonWare BisonFTP Server 3.5 Directory Traversal Information Disclosure
+   92   exploit/windows/fileformat/blazedvd_plf                                            2009-08-03       good       No     BlazeDVD 6.1 PLF Buffer Overflow
+   93   exploit/windows/fileformat/blazedvd_hdtv_bof                                       2012-04-03       normal     No     BlazeVideo HDTV Player Pro v6.6 Filename Handling Vulnerability
+   94   exploit/windows/ftp/dreamftp_format                                                2004-03-03       good       Yes    BolinTech Dream FTP Server 1.02 Format String
+   95   exploit/unix/webapp/bolt_authenticated_rce                                         2020-05-07       great      Yes    Bolt CMS 3.7.0 - Authenticated Remote Code Execution
+   96   exploit/windows/misc/bomberclone_overflow                                          2006-02-16       average    No     Bomberclone 0.11.6 Buffer Overflow
+   97   exploit/windows/fileformat/boxoft_wav_to_mp3                                       2015-08-31       normal     No     Boxoft WAV to MP3 Converter v1.1 Buffer Overflow
+   98   exploit/windows/nimsoft/nimcontroller_bof                                          2020-02-05       excellent  Yes    CA Unified Infrastructure Management Nimsoft 7.80 - Remote Buffer Overflow
+   99   exploit/windows/fileformat/ccmplayer_m3u_bof                                       2011-11-30       good       No     CCMPlayer 1.5 m3u Playlist Stack Based Buffer Overflow
+   100  post/multi/escalate/cups_root_file_read                                            2012-11-20       normal     No     CUPS 1.6.1 Root File Read
+   101  exploit/linux/http/control_web_panel_login_cmd_exec                                2023-01-05       excellent  Yes    CWP login.php Unauthenticated RCE
+   102  exploit/linux/http/cacti_unauthenticated_cmd_injection                             2022-12-05       excellent  Yes    Cacti 1.2.22 unauthenticated command injection
+   103  exploit/unix/webapp/cacti_graphimage_exec                                          2005-01-15       excellent  No     Cacti graph_view.php Remote Command Execution
+   104  auxiliary/scanner/http/epmp1000_get_chart_cmd_exec                                                  normal     No     Cambium ePMP 1000 'get_chart' Command Injection (v3.1-3.5-RC7)
+   105  auxiliary/scanner/http/epmp1000_ping_cmd_exec                                                       normal     No     Cambium ePMP 1000 'ping' Command Injection (up to v2.5)
+   106  auxiliary/scanner/http/epmp1000_dump_hashes                                                         normal     No     Cambium ePMP 1000 'ping' Password Hash Extractor (up to v2.5)
+   107  exploit/unix/http/epmp1000_get_chart_cmd_shell                                     2017-12-18       excellent  Yes    Cambium ePMP1000 'get_chart' Shell via Command Injection (v3.1-3.5-RC7)
+   108  exploit/unix/http/epmp1000_ping_cmd_shell                                          2015-11-28       excellent  Yes    Cambium ePMP1000 'ping' Shell via Command Injection (up to v2.5)
+   109  exploit/windows/ftp/cesarftp_mkd                                                   2006-06-12       average    Yes    Cesar FTP 0.99g MKD Command Buffer Overflow
+   110  post/hardware/automotive/pdt                                                                        normal     No     Check For and Prep the Pyrotechnic Devices (Airbags, Battery Clamps, etc.)
+   111  exploit/windows/browser/chrome_filereader_uaf                                      2019-03-21       manual     No     Chrome 72.0.3626.119 FileReader UaF exploit for Windows 7 x86
+   112  exploit/multi/http/churchinfo_upload_exec                                          2021-10-30       normal     Yes    ChurchInfo 1.2.13-1.3.0 Authenticated RCE
+   113  auxiliary/scanner/http/cisco_firepower_login                                                        normal     No     Cisco Firepower Management Console 6.0 Login
+   114  auxiliary/scanner/http/cisco_firepower_download                                    2016-10-10       normal     No     Cisco Firepower Management Console 6.0 Post Auth Report Download Directory Traversal
+   115  exploit/linux/http/cisco_firepower_useradd                                         2016-10-10       excellent  Yes    Cisco Firepower Management Console 6.0 Post Authentication UserAdd Vulnerability
+   116  exploit/windows/misc/citrix_streamprocess_data_msg                                 2011-11-04       normal     No     Citrix Provisioning Services 5.6 SP1 Streamprocess Opcode 0x40020000 Buffer Overflow
+   117  exploit/windows/misc/citrix_streamprocess_get_footer                               2011-11-04       normal     No     Citrix Provisioning Services 5.6 SP1 Streamprocess Opcode 0x40020002 Buffer Overflow
+   118  exploit/windows/misc/citrix_streamprocess_get_boot_record_request                  2011-11-04       normal     No     Citrix Provisioning Services 5.6 SP1 Streamprocess Opcode 0x40020004 Buffer Overflow
+   119  exploit/windows/misc/citrix_streamprocess_get_objects                              2011-11-04       normal     No     Citrix Provisioning Services 5.6 SP1 Streamprocess Opcode 0x40020006 Buffer Overflow
+   120  exploit/windows/misc/citrix_streamprocess                                          2011-01-20       good       No     Citrix Provisioning Services 5.6 streamprocess.exe Buffer Overflow
+   121  auxiliary/scanner/http/clansphere_traversal                                        2012-10-23       normal     No     ClanSphere 2011.3 Local File Inclusion Vulnerability
+   122  exploit/windows/misc/cloudme_sync                                                  2018-01-17       great      No     CloudMe Sync v1.10.9
+   123  exploit/windows/misc/stream_down_bof                                               2011-12-27       good       No     CoCSoft StreamDown 6.8.0 Buffer Overflow
+   124  auxiliary/gather/coldfusion_pwd_props                                              2013-05-07       normal     Yes    ColdFusion 'password.properties' Hash Extraction
+   125  exploit/windows/http/coldfusion_fckeditor                                          2009-07-03       excellent  No     ColdFusion 8.0.1 Arbitrary File Upload and Execute
+   126  auxiliary/scanner/ftp/colorado_ftp_traversal                                       2016-08-11       normal     Yes    ColoradoFTP Server 1.3 Build 8 Directory Traversal Information Disclosure
+   127  exploit/windows/ftp/comsnd_ftpd_fmtstr                                             2012-06-08       good       Yes    ComSndFTP v1.3.7 Beta USER Format String (Write4) Vulnerability
+   128  exploit/windows/browser/communicrypt_mail_activex                                  2010-05-19       great      No     CommuniCrypt Mail 1.16 SMTP ActiveX Stack Buffer Overflow
+   129  exploit/unix/webapp/coppermine_piceditor                                           2008-01-30       excellent  Yes    Coppermine Photo Gallery picEditor.php Command Execution
+   130  exploit/multi/http/cuteflow_upload_exec                                            2012-07-27       excellent  Yes    CuteFlow v2.11.2 Arbitrary File Upload Vulnerability
+   131  exploit/windows/fileformat/cyberlink_lpp_bof                                       2017-09-23       normal     No     CyberLink LabelPrint 2.5 Stack Buffer Overflow
+   132  exploit/windows/fileformat/cytel_studio_cy3                                        2011-10-02       good       No     Cytel Studio 9.0 (CY3 File) Stack Buffer Overflow
+   133  exploit/linux/http/dlink_diagnostic_exec_noauth                                    2013-03-05       excellent  No     D-Link DIR-645 / DIR-815 diagnostic.php Command Execution
+   134  exploit/windows/tftp/dlink_long_filename                                           2007-03-12       good       No     D-Link TFTP 1.0 Long Filename Buffer Overflow
+   135  exploit/linux/http/dlink_authentication_cgi_bof                                    2013-02-08       normal     Yes    D-Link authentication.cgi Buffer Overflow
+   136  exploit/linux/http/dlink_hedwig_cgi_bof                                            2013-02-08       normal     Yes    D-Link hedwig.cgi Buffer Overflow in Cookie Header
+   137  exploit/linux/http/dlink_dspw215_info_cgi_bof                                      2014-05-22       normal     Yes    D-Link info.cgi POST Request Buffer Overflow
+   138  exploit/windows/fileformat/djstudio_pls_bof                                        2009-12-30       normal     No     DJ Studio Pro 5.1 .pls Stack Buffer Overflow
+   139  exploit/windows/fileformat/dvdx_plf_bof                                            2007-06-02       normal     No     DVD X Player 5.5 .plf PlayList Buffer Overflow
+   140  exploit/unix/webapp/datalife_preview_exec                                          2013-01-28       excellent  Yes    DataLife Engine preview.php PHP Code Injection
+   141  post/windows/manage/dell_memory_protect                                                             manual     No     Dell DBUtilDrv2.sys Memory Protection Modifier
+   142  exploit/windows/local/cve_2021_21551_dbutil_memmove                                2021-05-04       good       Yes    Dell DBUtil_2_3.sys IOCTL memmove
+   143  exploit/multi/http/sonicwall_scrutinizer_methoddetail_sqli                         2014-07-24       excellent  Yes    Dell SonicWALL Scrutinizer 11.01 methodDetail SQL Injection
+   144  exploit/windows/scada/delta_ia_commgr_bof                                          2018-07-02       normal     No     Delta Electronics Delta Industrial Automation COMMGR 1.08 Stack Buffer Overflow
+   145  exploit/windows/fileformat/destinymediaplayer16                                    2009-01-03       good       No     Destiny Media Player 1.61 PLS M3U Buffer Overflow
+   146  exploit/windows/fileformat/digital_music_pad_pls                                   2010-09-17       normal     No     Digital Music Pad Version 8.2.3.3.4 Stack Buffer Overflow
+   147  auxiliary/gather/external_ip                                                                        normal     No     Discover External IP via Ifconfig.me
+   148  exploit/windows/misc/disk_savvy_adm                                                2017-01-31       great      No     Disk Savvy Enterprise v10.4.18
+   149  exploit/windows/tftp/distinct_tftp_traversal                                       2012-04-08       excellent  No     Distinct TFTP 3.10 Writable Directory Traversal Execution
+   150  exploit/windows/fileformat/djvu_imageurl                                           2008-10-30       low        No     DjVu DjVu_ActiveX_MSOffice.dll ActiveX ComponentBuffer Overflow
+   151  exploit/windows/local/docker_credential_wincred                                    2019-07-05       manual     Yes    Docker-Credential-Wincred.exe Privilege Escalation
+   152  exploit/unix/webapp/dogfood_spell_exec                                             2009-03-03       excellent  Yes    Dogfood CRM spell.php Remote Command Execution
+   153  auxiliary/gather/doliwamp_traversal_creds                                          2014-01-12       normal     Yes    DoliWamp 'jqueryFileTree.php' Traversal Gather Credentials
+   154  exploit/multi/http/dotcms_file_upload_rce                                          2022-05-03       excellent  Yes    DotCMS RCE via Arbitrary File Upload.
+   155  exploit/windows/local/druva_insync_insynccphwnet64_rcp_type_5_priv_esc             2020-02-25       excellent  Yes    Druva inSync inSyncCPHwnet64.exe RPC Type 5 Privilege Escalation
+   156  exploit/windows/fileformat/dupscout_xml                                            2017-03-29       normal     No     Dup Scout Enterprise v10.4.16 - Import Command Buffer Overflow
+   157  exploit/linux/http/esva_exec                                                       2012-08-16       excellent  Yes    E-Mail Security Virtual Appliance learn-msg.cgi Command Injection
+   158  auxiliary/gather/emc_cta_xxe                                                       2014-03-31       normal     No     EMC CTA v10.0 Unauthenticated XXE Arbitrary File Read
+   159  exploit/windows/ftp/easyfilesharing_pass                                           2006-07-31       average    Yes    Easy File Sharing FTP Server 2.0 PASS Overflow
+   160  auxiliary/scanner/ftp/easy_file_sharing_ftp                                        2017-03-07       normal     Yes    Easy File Sharing FTP Server 3.6 Directory Traversal
+   161  exploit/windows/http/easyfilesharing_post                                          2017-06-12       normal     No     Easy File Sharing HTTP Server 7.2 POST Buffer Overflow
+   162  exploit/windows/http/easyfilesharing_seh                                           2015-12-02       normal     No     Easy File Sharing HTTP Server 7.2 SEH Overflow
+   163  exploit/windows/http/easyftp_list                                                  2010-02-18       great      Yes    EasyFTP Server list.html path Stack Buffer Overflow
+   164  exploit/windows/http/ektron_xslt_exec                                              2012-10-16       excellent  Yes    Ektron 8.02 XSLT Transform Remote Code Execution
+   165  exploit/windows/http/ektron_xslt_exec_ws                                           2015-02-05       excellent  Yes    Ektron 8.5, 8.7, 9.0 XSLT Transform Remote Code Execution
+   166  auxiliary/scanner/http/ektron_cms400net                                                             normal     No     Ektron CMS400.NET Default Password Scanner
+   167  exploit/windows/backdoor/energizer_duo_payload                                     2010-03-05       excellent  No     Energizer DUO USB Battery Charger Arucer.dll Trojan Code Execution
+   168  exploit/windows/misc/enterasys_netsight_syslog_bof                                 2011-12-19       normal     No     Enterasys NetSight nssyslogd.exe Buffer Overflow
+   169  exploit/windows/misc/eureka_mail_err                                               2009-10-22       normal     No     Eureka Email 2.2q ERR Remote Buffer Overflow
+   170  post/windows/manage/execute_dotnet_assembly                                                         normal     No     Execute .net Assembly (x64 only)
+   171  exploit/linux/local/exim4_deliver_message_priv_esc                                 2019-06-05       excellent  Yes    Exim 4.87 - 4.91 Local Privilege Escalation
+   172  exploit/linux/http/eyesofnetwork_autodiscovery_rce                                 2020-02-06       excellent  Yes    EyesOfNetwork 5.1-5.3 AutoDiscovery Target Command Execution
+   173  exploit/windows/ftp/ftpsynch_list_reply                                            2010-10-12       good       No     FTP Synchronizer Professional 4.0.73.274 Stack Buffer Overflow
+   174  exploit/windows/ftp/ftpgetter_pwd_reply                                            2010-10-12       good       No     FTPGetter Standard v3.55.0.05 Stack Buffer Overflow (PWD)
+   175  exploit/windows/ftp/ftppad_list_reply                                              2010-10-12       good       No     FTPPad 1.2.0 Stack Buffer Overflow
+   176  exploit/windows/ftp/ftpshell51_pwd_reply                                           2010-10-12       good       No     FTPShell 5.1 Stack Buffer Overflow
+   177  exploit/windows/ftp/ftpshell_cli_bof                                               2017-03-04       normal     No     FTPShell client 6.70 (Enterprise edition) Stack Buffer Overflow
+   178  exploit/multi/http/familycms_less_exec                                             2011-11-29       excellent  Yes    Family Connections less.php Remote Command Execution
+   179  exploit/windows/fileformat/fatplayer_wav                                           2010-10-18       normal     No     Fat Player Media Player 0.6b0 Buffer Overflow
+   180  exploit/windows/ftp/filewrangler_list_reply                                        2010-10-12       good       No     FileWrangler 5.30 Stack Buffer Overflow
+   181  exploit/multi/browser/firefox_svg_plugin                                           2013-01-08       excellent  No     Firefox 17.0.1 Flash Privileged Code Injection
+   182  exploit/multi/browser/firefox_escape_retval                                        2009-07-13       normal     No     Firefox 3.5 escape() Return Value Memory Corruption
+   183  exploit/multi/browser/firefox_proto_crmfrequest                                    2013-08-06       excellent  No     Firefox 5.0 - 15.0.1 __exposedProps__ XCS Code Execution
+   184  auxiliary/gather/firefox_pdfjs_file_theft                                                           normal     No     Firefox PDF.js Browser File Theft
+   185  exploit/multi/browser/firefox_pdfjs_privilege_escalation                           2015-03-31       manual     No     Firefox PDF.js Privileged Javascript Injection
+   186  exploit/multi/browser/firefox_queryinterface                                       2006-02-02       normal     No     Firefox location.QueryInterface() Code Execution
+   187  exploit/multi/browser/firefox_tostring_console_injection                           2013-05-14       excellent  No     Firefox toString console.time Privileged Javascript Injection
+   188  exploit/linux/http/fortinac_keyupload_file_write                                   2023-02-16       excellent  Yes    Fortinet FortiNAC keyUpload.jsp arbitrary file write
+   189  exploit/linux/http/fortinet_authentication_bypass_cve_2022_40684                   2022-10-10       excellent  Yes    Fortinet FortiOS, FortiProxy, and FortiSwitchManager authentication bypass.
+   190  exploit/windows/fileformat/foxit_reader_filewrite                                  2011-03-05       normal     No     Foxit PDF Reader 4.2 Javascript File Write
+   191  exploit/windows/fileformat/foxit_title_bof                                         2010-11-13       great      No     Foxit PDF Reader v4.1.1 Title Stack Buffer Overflow
+   192  exploit/windows/fileformat/foxit_reader_launch                                     2009-03-09       good       No     Foxit Reader 3.0 Open Execute Action Stack Based Buffer Overflow
+   193  exploit/windows/fileformat/free_mp3_ripper_wav                                     2011-08-27       great      No     Free MP3 CD Ripper 1.1 WAV File Stack Buffer Overflow
+   194  exploit/windows/ssh/freeftpd_key_exchange                                          2006-05-12       average    No     FreeFTPd 1.0.10 Key Exchange Algorithm String Buffer Overflow
+   195  exploit/multi/http/freenas_exec_raw                                                2010-11-06       great      No     FreeNAS exec_raw.php Arbitrary Command Execution
+   196  exploit/unix/http/freepbx_callmenum                                                2012-03-20       manual     No     FreePBX 2.10.0 / 2.9.0 callmenum Remote Code Execution
+   197  exploit/unix/webapp/freepbx_config_exec                                            2014-03-21       excellent  Yes    FreePBX config.php Remote Code Execution
+   198  exploit/windows/ssh/freesshd_key_exchange                                          2006-05-12       average    No     FreeSSHd 1.0.9 Key Exchange Algorithm String Buffer Overflow
+   199  auxiliary/scanner/http/frontpage_credential_dump                                                    normal     No     FrontPage .pwd File Credential Dump
+   200  exploit/unix/webapp/fusionpbx_exec_cmd_exec                                        2019-11-02       excellent  Yes    FusionPBX Command exec.php Command Execution
+   201  exploit/unix/webapp/fusionpbx_operator_panel_exec_cmd_exec                         2019-06-06       excellent  Yes    FusionPBX Operator Panel exec.php Command Execution
+   202  exploit/windows/telnet/gamsoft_telsrv_username                                     2000-07-17       average    Yes    GAMSoft TelSrv 1.5 Username Buffer Overflow
+   203  exploit/windows/scada/ge_proficy_cimplicity_gefebt                                 2014-01-23       excellent  Yes    GE Proficy CIMPLICITY gefebt.exe Remote Code Execution
+   204  auxiliary/admin/scada/ge_proficy_substitute_traversal                              2013-01-22       normal     No     GE Proficy Cimplicity WebView substitute.bcl Directory Traversal
+   205  exploit/multi/http/glpi_install_rce                                                2013-09-12       manual     Yes    GLPI install.php Remote Command Execution
+   206  exploit/windows/fileformat/gsm_sim                                                 2010-07-07       normal     No     GSM SIM Editor 5.15 Buffer Overflow
+   207  exploit/windows/fileformat/gta_samp                                                2011-09-18       normal     No     GTA SA-MP server.cfg Buffer Overflow
+   208  exploit/linux/http/geutebruck_testaction_exec                                      2020-05-20       excellent  Yes    Geutebruck testaction.cgi Remote Command Execution
+   209  exploit/windows/http/geutebrueck_gcore_x64_rce_bo                                  2017-01-24       normal     Yes    Geutebrueck GCore - GCoreServer.exe Buffer Overflow RCE
+   210  exploit/multi/http/gitlist_arg_injection                                           2018-04-26       excellent  Yes    GitList v0.6.0 Argument Injection Vulnerability
+   211  exploit/multi/http/glossword_upload_exec                                           2013-02-05       excellent  Yes    Glossword v1.8.8 - 1.8.12 Arbitrary File Upload Vulnerability
+   212  exploit/linux/http/goautodial_3_rce_command_injection                              2015-04-21       excellent  Yes    GoAutoDial 3.3 Authentication Bypass / Command Injection
+   213  exploit/multi/browser/chrome_object_create                                         2018-09-25       manual     No     Google Chrome 67, 68 and 69 Object.create exploit
+   214  exploit/multi/browser/chrome_array_map                                             2019-03-07       manual     No     Google Chrome 72 and 73 Array.map exploit
+   215  exploit/multi/browser/chrome_simplifiedlowering_overflow                           2020-11-19       manual     No     Google Chrome versions before 87.0.4280.88 integer overflow during SimplfiedLowering phase
+   216  exploit/multi/browser/chrome_cve_2021_21220_v8_insufficient_validation             2021-04-13       manual     No     Google Chrome versions before 89.0.4389.128 V8 XOR Typer Out-Of-Bounds Access RCE
+   217  auxiliary/admin/http/grafana_auth_bypass                                           2019-08-14       normal     No     Grafana 2.0 through 5.2.2 authentication bypass for LDAP and OAuth
+   218  exploit/windows/fileformat/greenshot_deserialize_cve_2023_34634                    2023-07-26       excellent  No     Greenshot .NET Deserialization Fileformat Exploit
+   219  exploit/linux/http/groundwork_monarch_cmd_exec                                     2013-03-08       excellent  Yes    GroundWork monarch_scan.cgi OS Command Injection
+   220  auxiliary/dos/windows/ftp/guildftp_cwdlist                                         2008-10-12       normal     No     Guild FTPd 0.999.8.11/0.999.14 Heap Corruption
+   221  auxiliary/scanner/h323/h323_version                                                                 normal     No     H.323 Version Scanner
+   222  exploit/windows/browser/hp_alm_xgo_setshapenodetype_exec                           2012-08-29       normal     No     HP Application Lifecycle Management XGO.ocx ActiveX SetShapeNodeType() Remote Code Execution
+   223  auxiliary/admin/hp/hp_data_protector_cmd                                           2011-02-07       normal     No     HP Data Protector 6.1 EXEC_CMD Command Execution
+   224  exploit/windows/misc/hp_dataprotector_install_service                              2011-11-02       excellent  Yes    HP Data Protector 6.10/6.11/6.20 Install Service
+   225  exploit/windows/misc/hp_dataprotector_cmd_exec                                     2014-11-02       excellent  Yes    HP Data Protector 8.10 Remote Command Execution
+   226  exploit/windows/misc/hp_magentservice                                              2012-01-12       average    No     HP Diagnostics Server magentservice.exe Overflow
+   227  exploit/windows/browser/hp_loadrunner_addfolder                                    2007-12-25       good       No     HP LoadRunner 9.0 ActiveX AddFolder Buffer Overflow
+   228  exploit/windows/misc/hp_loadrunner_magentproc                                      2013-07-27       normal     No     HP LoadRunner magentproc.exe Overflow
+   229  exploit/windows/misc/hp_loadrunner_magentproc_cmdexec                              2010-05-06       excellent  No     HP Mercury LoadRunner Agent magentproc.exe Remote Command Execution
+   230  exploit/windows/http/hp_nnm_webappmon_ovjavalocale                                 2010-08-03       great      No     HP NNM CGI webappmon.exe OvJavaLocale Buffer Overflow
+   231  exploit/windows/misc/hp_omniinet_1                                                 2009-12-17       great      Yes    HP OmniInet.exe MSG_PROTOCOL Buffer Overflow
+   232  exploit/windows/misc/hp_omniinet_2                                                 2009-12-17       great      Yes    HP OmniInet.exe MSG_PROTOCOL Buffer Overflow
+   233  exploit/windows/misc/hp_omniinet_4                                                 2011-06-29       good       No     HP OmniInet.exe Opcode 20 Buffer Overflow
+   234  exploit/windows/misc/hp_omniinet_3                                                 2011-06-29       great      Yes    HP OmniInet.exe Opcode 27 Buffer Overflow
+   235  exploit/windows/http/hp_nnm_ovas                                                   2008-04-02       good       Yes    HP OpenView NNM 7.53, 7.51 OVAS.EXE Pre-Authentication Stack Buffer Overflow
+   236  exploit/windows/http/hp_nnm_nnmrptconfig_schdparams                                2011-01-10       normal     No     HP OpenView NNM nnmRptConfig.exe schdParams Buffer Overflow
+   237  exploit/windows/http/hp_nnm_openview5                                              2007-12-06       great      No     HP OpenView Network Node Manager OpenView5.exe CGI Buffer Overflow
+   238  exploit/windows/http/hp_nnm_ovwebhelp                                              2009-12-09       great      No     HP OpenView Network Node Manager OvWebHelp.exe CGI Buffer Overflow
+   239  exploit/windows/http/hp_nnm_snmp                                                   2009-12-09       great      No     HP OpenView Network Node Manager Snmp.exe CGI Buffer Overflow
+   240  exploit/windows/http/hp_nnm_toolbar_01                                             2009-01-07       great      No     HP OpenView Network Node Manager Toolbar.exe CGI Buffer Overflow
+   241  exploit/windows/http/hp_nnm_toolbar_02                                             2009-01-21       normal     No     HP OpenView Network Node Manager Toolbar.exe CGI Cookie Handling Buffer Overflow
+   242  exploit/windows/http/hp_nnm_getnnmdata_hostname                                    2010-05-11       great      No     HP OpenView Network Node Manager getnnmdata.exe (Hostname) CGI Buffer Overflow
+   243  exploit/windows/http/hp_nnm_getnnmdata_icount                                      2010-05-11       great      No     HP OpenView Network Node Manager getnnmdata.exe (ICount) CGI Buffer Overflow
+   244  exploit/windows/http/hp_nnm_getnnmdata_maxage                                      2010-05-11       great      No     HP OpenView Network Node Manager getnnmdata.exe (MaxAge) CGI Buffer Overflow
+   245  exploit/windows/http/hp_nnm_ovbuildpath_textfile                                   2011-11-01       normal     No     HP OpenView Network Node Manager ov.dll _OVBuildPath Buffer Overflow
+   246  exploit/windows/http/hp_nnm_ovalarm_lang                                           2009-12-09       great      No     HP OpenView Network Node Manager ovalarm.exe CGI Buffer Overflow
+   247  exploit/windows/http/hp_nnm_ovwebsnmpsrv_uro                                       2010-06-08       great      No     HP OpenView Network Node Manager ovwebsnmpsrv.exe Unrecognized Option Buffer Overflow
+   248  exploit/windows/http/hp_nnm_ovwebsnmpsrv_main                                      2010-06-16       great      No     HP OpenView Network Node Manager ovwebsnmpsrv.exe main Buffer Overflow
+   249  exploit/windows/http/hp_nnm_ovwebsnmpsrv_ovutil                                    2010-06-16       great      No     HP OpenView Network Node Manager ovwebsnmpsrv.exe ovutil Buffer Overflow
+   250  exploit/windows/http/hp_nnm_snmpviewer_actapp                                      2010-05-11       great      No     HP OpenView Network Node Manager snmpviewer.exe Buffer Overflow
+   251  exploit/unix/webapp/openview_connectednodes_exec                                   2005-08-25       excellent  No     HP Openview connectedNodes.ovpl Remote Command Execution
+   252  exploit/windows/misc/hp_operations_agent_coda_34                                   2012-07-09       normal     Yes    HP Operations Agent Opcode coda.exe 0x34 Buffer Overflow
+   253  exploit/windows/misc/hp_operations_agent_coda_8c                                   2012-07-09       normal     Yes    HP Operations Agent Opcode coda.exe 0x8c Buffer Overflow
+   254  auxiliary/admin/http/hp_web_jetadmin_exec                                          2004-04-27       normal     No     HP Web JetAdmin 6.5 Server Arbitrary Command Execution
+   255  auxiliary/admin/hp/hp_ilo_create_admin_account                                     2017-08-24       normal     Yes    HP iLO 4 1.00-2.50 Authentication Bypass Administrator Account Creation
+   256  exploit/linux/misc/hplip_hpssd_exec                                                2007-10-04       excellent  No     HPLIP hpssd.py From Address Arbitrary Command Execution
+   257  exploit/windows/fileformat/ht_mp3player_ht3_bof                                    2009-06-29       good       No     HT-MP3Player 1.0 HT3 File Parsing Buffer Overflow
+   258  exploit/windows/fileformat/hhw_hhp_compiledfile_bof                                2006-02-06       good       No     HTML Help Workshop 4.74 (hhp Project File) Buffer Overflow
+   259  exploit/windows/fileformat/hhw_hhp_contentfile_bof                                 2006-02-06       good       No     HTML Help Workshop 4.74 (hhp Project File) Buffer Overflow
+   260  exploit/windows/fileformat/hhw_hhp_indexfile_bof                                   2009-01-17       good       No     HTML Help Workshop 4.74 (hhp Project File) Buffer Overflow
+   261  auxiliary/scanner/http/xpath                                                                        normal     No     HTTP Blind XPATH 1.0 Injector
+   262  auxiliary/scanner/http/robots_txt                                                                   normal     No     HTTP Robots.txt Content Scanner
+   263  auxiliary/scanner/http/trace_axd                                                                    normal     No     HTTP trace.axd Content Scanner
+   264  exploit/unix/webapp/hastymail_exec                                                 2011-11-22       excellent  Yes    Hastymail 2.1.1 RC1 Command Injection
+   265  exploit/windows/fileformat/homm3_h3m                                               2015-07-29       normal     No     Heroes of Might and Magic III .h3m Map file Buffer Overflow
+   266  exploit/multi/http/horde_href_backdoor                                             2012-02-13       excellent  No     Horde 3.3.12 Backdoor Arbitrary PHP Code Execution
+   267  exploit/windows/browser/systemrequirementslab_unsafe                               2008-10-16       excellent  No     Husdawg, LLC. System Requirements Lab ActiveX Unsafe Method
+   268  exploit/unix/webapp/hybridauth_install_php_exec                                    2014-08-04       manual     Yes    HybridAuth install.php PHP Code Execution
+   269  exploit/windows/http/ia_webmail                                                    2003-11-03       average    No     IA WebMail 3.x Buffer Overflow
+   270  exploit/windows/misc/ibm_cognos_tm1admsd_bof                                       2012-04-02       normal     No     IBM Cognos tm1admsd.exe Overflow
+   271  auxiliary/admin/db2/db2rcmd                                                        2004-03-04       normal     No     IBM DB2 db2rcmd.exe Command Execution Vulnerability
+   272  exploit/windows/lotus/domino_sametime_stmux                                        2008-05-21       average    Yes    IBM Lotus Domino Sametime STMux.exe Stack Buffer Overflow
+   273  exploit/windows/fileformat/ibm_pcm_ws                                              2012-02-28       great      No     IBM Personal Communications iSeries Access WorkStation 5.9 Profile
+   274  exploit/windows/http/ibm_tpmfosd_overflow                                          2007-05-02       good       No     IBM TPM for OS Deployment 5.1.0.x rembo.exe Buffer Overflow
+   275  exploit/windows/browser/ibm_tivoli_pme_activex_bof                                 2012-03-01       normal     No     IBM Tivoli Provisioning Manager Express for Software Distribution Isig.isigCtl.1 ActiveX RunAndUploadFile() Method Overflow
+   276  exploit/linux/http/ipfire_pakfire_exec                                             2021-05-17       excellent  Yes    IPFire 2.25 Core Update 156 and Prior pakfire.cgi Authenticated RCE
+   277  exploit/linux/http/ipfire_oinkcode_exec                                            2017-06-09       excellent  Yes    IPFire proxy.cgi RCE
+   278  exploit/linux/http/ipfire_proxy_exec                                               2016-05-04       excellent  Yes    IPFire proxy.cgi RCE
+   279  auxiliary/scanner/ipmi/ipmi_cipher_zero                                            2013-06-20       normal     No     IPMI 2.0 Cipher Zero Authentication Bypass Scanner
+   280  auxiliary/scanner/ipmi/ipmi_dumphashes                                             2013-06-20       normal     No     IPMI 2.0 RAKP Remote SHA1 Password Hash Retrieval
+   281  exploit/windows/firewall/blackice_pam_icq                                          2004-03-18       great      No     ISS PAM.dll ICQ Parser Buffer Overflow
+   282  exploit/windows/scada/iconics_genbroker                                            2011-03-21       good       No     Iconics GENESIS32 Integer Overflow Version 9.21.201.01
+   283  exploit/multi/http/uptime_file_upload_1                                            2013-11-19       excellent  Yes    Idera Up.Time Monitoring Station 7.0 post2file.php Arbitrary File Upload
+   284  exploit/multi/http/uptime_file_upload_2                                            2013-11-18       excellent  Yes    Idera Up.Time Monitoring Station 7.4 post2file.php Arbitrary File Upload
+   285  exploit/windows/browser/indusoft_issymbol_internationalseparator                   2012-04-28       normal     No     InduSoft Web Studio ISSymbol.ocx InternationalSeparator() Heap Overflow
+   286  exploit/unix/webapp/instantcms_exec                                                2013-06-26       excellent  Yes    InstantCMS 1.6 Remote PHP Code Execution
+   287  exploit/multi/http/subrion_cms_file_upload_rce                                     2018-11-04       excellent  Yes    Intelliants Subrion CMS 4.2.1 - Authenticated File Upload Bypass to RCE
+   288  exploit/windows/http/intersystems_cache                                            2009-09-29       great      No     InterSystems Cache UtilConfigHome.csp Argument Buffer Overflow
+   289  exploit/windows/http/intrasrv_bof                                                  2013-05-30       manual     Yes    Intrasrv 1.0 Buffer Overflow
+   290  exploit/unix/webapp/invision_pboard_unserialize_exec                               2012-10-25       excellent  Yes    Invision IP.Board unserialize() PHP Code Execution
+   291  exploit/windows/ftp/wsftp_server_505_xmd5                                          2006-09-14       average    Yes    Ipswitch WS_FTP Server 5.05 XMD5 Overflow
+   292  exploit/windows/http/ipswitch_wug_maincfgret                                       2004-08-25       great      No     Ipswitch WhatsUp Gold 8.03 Buffer Overflow
+   293  exploit/multi/browser/java_trusted_chain                                           2010-03-31       excellent  No     Java Statement.invoke() Trusted Method Chain Privilege Escalation
+   294  exploit/unix/webapp/joomla_tinybrowser                                             2009-07-22       excellent  Yes    Joomla 1.5.12 TinyBrowser File Upload Code Execution
+   295  exploit/windows/browser/juniper_sslvpn_ive_setupdll                                2006-04-26       normal     No     Juniper SSL-VPN IVE JuniperSetupDLL.dll ActiveX Control Buffer Overflow
+   296  auxiliary/dos/windows/games/kaillera                                               2011-07-02       normal     No     Kaillera 0.86 Server Denial of Service
+   297  exploit/windows/ftp/sami_ftpd_user                                                 2006-01-24       normal     Yes    KarjaSoft Sami FTP Server v2.0.2 USER Overflow
+   298  exploit/windows/http/kaseya_uploader                                               2015-09-23       excellent  Yes    Kaseya VSA uploader.aspx Arbitrary File Upload
+   299  exploit/windows/firewall/kerio_auth                                                2003-04-28       average    No     Kerio Firewall 2.1.4 Authentication Packet Overflow
+   300  exploit/unix/webapp/kimai_sqli                                                     2013-05-21       average    Yes    Kimai v0.9.2 'db_restore.php' SQL Injection
+   301  exploit/windows/browser/wellintech_kingscada_kxclientdownload                      2014-01-14       good       No     KingScada kxClientDownload.ocx ActiveX Remote Code Execution
+   302  exploit/linux/http/klog_server_authenticate_user_unauth_command_injection          2020-12-27       excellent  Yes    Klog Server authenticate.php user Unauthenticated Command Injection
+   303  auxiliary/scanner/http/kodi_traversal                                              2017-02-12       normal     No     Kodi 17.0 Local File Inclusion Vulnerability
+   304  auxiliary/scanner/ftp/konica_ftp_traversal                                         2015-09-22       normal     Yes    Konica Minolta FTP Utility 1.00 Directory Traversal Information Disclosure
+   305  exploit/windows/ftp/kmftp_utility_cwd                                              2015-08-23       normal     Yes    Konica Minolta FTP Utility 1.00 Post Auth CWD Command SEH Overflow
+   306  exploit/multi/http/kordil_edms_upload_exec                                         2013-02-22       excellent  Yes    Kordil EDMS v2.2.60rc3 Unauthenticated Arbitrary File Upload Vulnerability
+   307  exploit/windows/misc/landesk_aolnsrvr                                              2007-04-13       average    No     LANDesk Management Suite 8.7 Alert Service Buffer Overflow
+   308  exploit/windows/ftp/labf_nfsaxe                                                    2017-05-15       normal     No     LabF nfsAxe 3.7 FTP Client Stack Buffer Overflow
+   309  exploit/windows/fileformat/lattice_pac_bof                                         2012-05-16       normal     No     Lattice Semiconductor PAC-Designer 6.21 Symbol Value Buffer Overflow
+   310  exploit/windows/ftp/leapftp_list_reply                                             2010-10-12       good       No     LeapFTP 3.0.1 Stack Buffer Overflow
+   311  exploit/windows/ftp/leapftp_pasv_reply                                             2003-06-09       normal     No     LeapWare LeapFTP v2.7.3.600 PASV Reply Client Overflow
+   312  exploit/windows/misc/lianja_db_net                                                 2013-05-22       normal     Yes    Lianja SQL 1.0.0RC5.1 db_netserver Stack Buffer Overflow
+   313  auxiliary/fileformat/odt_badodt                                                    2018-05-01       normal     No     LibreOffice 6.03 /Apache OpenOffice 4.1.5 Malicious ODT File Generator
+   314  exploit/linux/http/linksys_e1500_apply_exec                                        2013-02-05       excellent  No     Linksys E1500/E2500 apply.cgi Remote Command Injection
+   315  exploit/linux/http/linksys_wrt160nv2_apply_exec                                    2013-02-11       excellent  No     Linksys WRT160nv2 apply.cgi Remote Command Injection
+   316  exploit/linux/http/linksys_apply_cgi                                               2005-09-13       great      No     Linksys WRT54 Access Point apply.cgi Buffer Overflow
+   317  exploit/linux/http/linksys_wrt54gl_apply_exec                                      2013-01-18       manual     No     Linksys WRT54GL apply.cgi Command Execution
+   318  post/linux/dos/xen_420_dos                                                                          normal     No     Linux DoS Xen 4.2.0 2012-5525
+   319  post/linux/gather/mount_cifs_creds                                                                  normal     No     Linux Gather Saved mount.cifs/mount.smbfs Credentials
+   320  exploit/linux/local/netfilter_priv_esc_ipv4                                        2016-06-03       good       Yes    Linux Kernel 4.6.3 Netfilter Privilege Escalation
+   321  exploit/linux/http/linuxki_rce                                                     2020-05-17       excellent  Yes    LinuxKI Toolset 6.01 Remote Command Execution
+   322  exploit/linux/ssh/loadbalancerorg_enterprise_known_privkey                         2014-03-17       excellent  No     Loadbalancer.org Enterprise VA SSH Private Key Exposure
+   323  exploit/windows/fileformat/lotusnotes_lzh                                          2011-05-24       good       No     Lotus Notes 8.0.x - 8.5.2 FP2 - Autonomy Keyview (.lzh Attachment)
+   324  exploit/windows/lotus/lotusnotes_lzh                                               2011-05-24       normal     No     Lotus Notes 8.0.x - 8.5.2 FP2 - Autonomy Keyview (.lzh Attachment)
+   325  exploit/multi/http/lcms_php_exec                                                   2011-03-03       excellent  Yes    LotusCMS 3.0 eval() Remote Command Execution
+   326  exploit/linux/http/lucee_admin_imgprocess_file_write                               2021-01-15       excellent  Yes    Lucee Administrator imgProcess.cfm Arbitrary File Write
+   327  exploit/windows/imap/mdaemon_fetch                                                 2008-03-13       great      Yes    MDaemon 9.6.4 IMAPD FETCH Buffer Overflow
+   328  exploit/windows/http/mdaemon_worldclient_form2raw                                  2003-12-29       great      Yes    MDaemon WorldClient form2raw.cgi Stack Buffer Overflow
+   329  exploit/windows/fileformat/mjm_coreplayer2011_s3m                                  2011-04-30       good       No     MJM Core Player 2011 .s3m Stack Buffer Overflow
+   330  exploit/windows/fileformat/mjm_quickplayer_s3m                                     2011-04-30       good       No     MJM QuickPlayer 1.00 Beta 60a / QuickPlayer 2010 .s3m Stack Buffer Overflow
+   331  exploit/windows/scada/moxa_mdmtool                                                 2010-10-20       great      No     MOXA Device Manager Tool 2.1 Buffer Overflow
+   332  exploit/windows/local/mqac_write                                                   2014-07-22       average    Yes    MQAC.sys Arbitrary Write Privilege Escalation
+   333  exploit/windows/iis/ms01_023_printer                                               2001-05-01       good       Yes    MS01-023 Microsoft IIS 5.0 Printer Host Header Overflow
+   334  exploit/windows/iis/ms01_033_idq                                                   2001-06-18       good       No     MS01-033 Microsoft IIS 5.0 IDQ Path Overflow
+   335  exploit/windows/iis/ms02_018_htr                                                   2002-04-10       good       No     MS02-018 Microsoft IIS 4.0 .HTR Path Overflow
+   336  exploit/windows/iis/ms02_065_msadc                                                 2002-11-02       normal     Yes    MS02-065 Microsoft IIS MDAC msadcs.dll RDS DataStub Content-Type Overflow
+   337  exploit/windows/iis/ms03_007_ntdll_webdav                                          2003-05-30       great      Yes    MS03-007 Microsoft IIS 5.0 WebDAV ntdll.dll Path Overflow
+   338  exploit/windows/isapi/ms03_022_nsiislog_post                                       2003-06-25       good       Yes    MS03-022 Microsoft IIS ISAPI nsiislog.dll ISAPI POST Overflow
+   339  exploit/windows/isapi/ms03_051_fp30reg_chunked                                     2003-11-11       good       Yes    MS03-051 Microsoft IIS ISAPI FrontPage fp30reg.dll Chunked Overflow
+   340  exploit/windows/smb/ms04_007_killbill                                              2004-02-10       low        No     MS04-007 Microsoft ASN.1 Library Bitstring Heap Overflow
+   341  exploit/windows/smb/ms06_066_nwapi                                                 2006-11-14       good       No     MS06-066 Microsoft Services nwapi32.dll Module Exploit
+   342  exploit/windows/smb/ms06_066_nwwks                                                 2006-11-14       good       No     MS06-066 Microsoft Services nwwks.dll Module Exploit
+   343  exploit/windows/browser/ms06_067_keyframe                                          2006-11-14       normal     No     MS06-067 Microsoft Internet Explorer Daxctle.OCX KeyFrame Method Heap Buffer Overflow Vulnerability
+   344  exploit/windows/smb/ms09_050_smb2_negotiate_func_index                             2009-09-07       good       No     MS09-050 Microsoft SRV2.SYS SMB Negotiate ProcessID Function Table Dereference
+   345  exploit/windows/browser/ms10_022_ie_vbscript_winhlp32                              2010-02-26       great      No     MS10-022 Microsoft Internet Explorer Winhlp32.exe MsgBox Code Execution
+   346  exploit/windows/fileformat/ms11_021_xlb_bof                                        2011-08-09       normal     No     MS11-021 Microsoft Office 2007 Excel .xlb Buffer Overflow
+   347  exploit/windows/local/ms_ndproxy                                                   2013-11-27       average    Yes    MS14-002 Microsoft Windows ndproxy.sys Local Privilege Escalation
+   348  exploit/windows/local/ms14_009_ie_dfsvc                                            2014-02-11       great      Yes    MS14-009 .NET Deployment Service IE Sandbox Escape
+   349  exploit/windows/local/bthpan                                                       2014-07-18       average    Yes    MS14-062 Microsoft Bluetooth Personal Area Networking (BthPan.sys) Privilege Escalation
+   350  auxiliary/scanner/http/ms15_034_http_sys_memory_dump                                                normal     Yes    MS15-034 HTTP Protocol Stack Request Handling HTTP.SYS Memory Information Disclosure
+   351  exploit/windows/local/ms16_016_webdav                                              2016-02-09       excellent  Yes    MS16-016 mrxdav.sys WebDav Local Privilege Escalation
+   352  exploit/windows/iis/msadc                                                          1998-07-17       excellent  Yes    MS99-025 Microsoft IIS MDAC msadcs.dll RDS Arbitrary Remote Command Execution
+   353  exploit/osx/local/rsh_libmalloc                                                    2015-10-01       normal     No     Mac OS X 10.9.5 / 10.10.5 - rsh/libmalloc Privilege Escalation
+   354  auxiliary/gather/apple_safari_webarchive_uxss                                      2013-02-22       normal     No     Mac OS X Safari .webarchive File Format UXSS
+   355  exploit/multi/http/magento_unserialize                                             2016-05-17       excellent  Yes    Magento 2.0.6 Unserialize Remote Code Execution
+   356  exploit/windows/fileformat/magix_musikmaker_16_mmm                                 2011-04-26       good       No     Magix Musik Maker 16 .mmm Stack Buffer Overflow
+   357  exploit/linux/http/magnusbilling_unauth_rce_cve_2023_30258                         2023-06-26       excellent  Yes    MagnusBilling application unauthenticated Remote Command Execution.
+   358  exploit/osx/email/mailapp_image_exec                                               2006-03-01       manual     No     Mail.app Image Attachment Command Execution
+   359  exploit/windows/imap/mailenable_status                                             2005-07-13       great      No     MailEnable IMAPD (1.54) STATUS Request Buffer Overflow
+   360  exploit/windows/imap/mailenable_login                                              2006-12-11       great      No     MailEnable IMAPD (2.34/2.35) Login Request Buffer Overflow
+   361  exploit/multi/http/makoserver_cmd_exec                                             2017-09-03       excellent  Yes    Mako Server v2.5, 2.6 OS Command Injection RCE
+   362  exploit/multi/http/manage_engine_dc_pmp_sqli                                       2014-06-08       excellent  Yes    ManageEngine Desktop Central / Password Manager LinkViewFetchServlet.dat SQL Injection
+   363  auxiliary/scanner/http/manageengine_deviceexpert_traversal                         2012-03-18       normal     No     ManageEngine DeviceExpert 5.6 ScheduleResultViewer FileName Traversal
+   364  auxiliary/admin/http/manageengine_pmp_privesc                                      2014-11-08       normal     Yes    ManageEngine Password Manager SQLAdvancedALSearchResult.cc Pro SQL Injection
+   365  exploit/multi/http/manageengine_search_sqli                                        2012-10-18       excellent  Yes    ManageEngine Security Manager Plus 5.5 Build 5505 SQL Injection
+   366  auxiliary/scanner/http/manageengine_securitymanager_traversal                      2012-10-19       normal     No     ManageEngine SecurityManager Plus 5.5 Directory Traversal
+   367  exploit/unix/webapp/guestbook_ssi_exec                                             1999-11-05       excellent  No     Matt Wright guestbook.pl Arbitrary Command Execution
+   368  exploit/windows/browser/mcafee_mvt_exec                                            2012-04-30       excellent  No     McAfee Virtual Technician MVTControl 6.3.0.1911 GetObject Vulnerability
+   369  exploit/windows/imap/mdaemon_cram_md5                                              2004-11-12       great      No     Mdaemon 8.0.3 IMAPD CRAM-MD5 Authentication Overflow
+   370  exploit/windows/fileformat/mediajukebox                                            2009-07-01       normal     No     Media Jukebox 8.0.400 Buffer Overflow (SEH)
+   371  exploit/windows/fileformat/mediacoder_m3u                                          2013-06-24       normal     No     MediaCoder .M3U Buffer Overflow
+   372  exploit/multi/http/mediawiki_thumb                                                 2014-01-28       excellent  Yes    MediaWiki Thumb.php Remote Command Execution
+   373  exploit/windows/imap/mercur_imap_select_overflow                                   2006-03-17       average    No     Mercur v5.0 IMAP SP3 SELECT Buffer Overflow
+   374  exploit/windows/imap/mercury_login                                                 2007-03-06       normal     Yes    Mercury/32 4.01 IMAP LOGIN SEH Buffer Overflow
+   375  exploit/windows/imap/mercury_rename                                                2004-11-29       average    Yes    Mercury/32 v4.01a IMAP RENAME Buffer Overflow
+   376  exploit/windows/fileformat/microp_mppl                                             2010-08-23       great      No     MicroP 0.1.1.1600 (MPPL File) Stack Buffer Overflow
+   377  exploit/windows/browser/msvidctl_mpeg2                                             2009-07-05       normal     No     Microsoft DirectShow (msvidctl.dll) MPEG-2 Memory Corruption
+   378  exploit/windows/fileformat/office_excel_slk                                        2018-10-07       manual     No     Microsoft Excel .SLK Payload Delivery
+   379  auxiliary/dos/windows/http/ms10_065_ii6_asp_dos                                    2010-09-14       normal     No     Microsoft IIS 6.0 ASP Stack Exhaustion Denial of Service
+   380  exploit/windows/isapi/w3who_query                                                  2004-12-06       good       Yes    Microsoft IIS ISAPI w3who.dll Query String Overflow
+   381  exploit/windows/fileformat/visio_dxf_bof                                           2010-05-04       good       No     Microsoft Office Visio VISIODWG.DLL DXF File Handling Vulnerability
+   382  auxiliary/dos/windows/smb/ms06_035_mailslot                                        2006-07-11       normal     No     Microsoft SRV.SYS Mailslot Write Corruption
+   383  auxiliary/dos/windows/smb/ms06_063_trans                                                            normal     No     Microsoft SRV.SYS Pipe Transaction No Null
+   384  auxiliary/dos/windows/smb/ms09_001_write                                                            normal     No     Microsoft SRV.SYS WriteAndX Invalid DataOffset
+   385  auxiliary/dos/windows/smb/ms09_050_smb2_negotiate_pidhigh                                           normal     No     Microsoft SRV2.SYS SMB Negotiate ProcessID Function Table Dereference
+   386  auxiliary/dos/windows/smb/ms09_050_smb2_session_logoff                                              normal     No     Microsoft SRV2.SYS SMB2 Logoff Remote Kernel NULL Pointer Dereference
+   387  exploit/windows/browser/ms08_070_visual_studio_msmask                              2008-08-13       normal     No     Microsoft Visual Studio Mdmask32.ocx ActiveX Buffer Overflow
+   388  auxiliary/dos/windows/llmnr/ms11_030_dnsapi                                        2011-04-12       normal     No     Microsoft Windows DNSAPI.dll LLMNR Buffer Underrun DoS
+   389  evasion/windows/windows_defender_js_hta                                                             normal     No     Microsoft Windows Defender Evasive JS.Net and HTA
+   390  auxiliary/dos/windows/smb/ms10_054_queryfs_pool_overflow                                            normal     No     Microsoft Windows SRV.SYS SrvSmbQueryFsInformation Pool Overflow DoS
+   391  exploit/windows/fileformat/msworks_wkspictureinterface                             2008-11-28       low        No     Microsoft Works 7 WkImgSrv.dll WKsPictureInterface() ActiveX Code Execution
+   392  auxiliary/gather/microweber_lfi                                                    2022-01-30       normal     Yes    Microweber CMS v1.2.10 Local File Inclusion (Authenticated)
+   393  exploit/linux/http/mida_solutions_eframework_ajaxreq_rce                           2020-07-24       excellent  Yes    Mida Solutions eFramework ajaxreq.php Command Injection
+   394  exploit/windows/fileformat/millenium_mp3_pls                                       2009-07-30       great      No     Millenium MP3 Studio 2.0 (PLS File) Stack Buffer Overflow
+   395  exploit/windows/misc/mini_stream                                                   2009-12-25       normal     No     Mini-Stream 3.0.1.1 Buffer Overflow
+   396  exploit/windows/fileformat/mini_stream_pls_bof                                     2010-07-16       great      No     Mini-Stream RM-MP3 Converter v3.1.2.1 PLS File Stack Buffer Overflow
+   397  exploit/linux/upnp/miniupnpd_soap_bof                                              2013-03-27       normal     Yes    MiniUPnPd 1.0 Stack Buffer Overflow Remote Code Execution
+   398  auxiliary/dos/upnp/miniupnpd_dos                                                   2013-03-27       normal     No     MiniUPnPd 1.4 Denial of Service (DoS) Exploit
+   399  exploit/windows/http/minishare_get_overflow                                        2004-11-07       average    No     Minishare 1.4.1 Buffer Overflow
+   400  auxiliary/dos/mirageos/qubes_mirage_firewall_dos                                   2022-12-04       normal     No     Mirage firewall for QubesOS 0.8.0-0.8.3 Denial of Service (DoS) Exploit
+   401  exploit/multi/http/mobilecartly_upload_exec                                        2012-08-10       excellent  Yes    MobileCartly 1.0 Arbitrary File Creation Vulnerability
+   402  exploit/linux/misc/mongod_native_helper                                            2013-03-24       normal     No     MongoDB nativeHelper.apply Remote Code Execution
+   403  auxiliary/admin/motorola/wr850g_cred                                               2004-09-24       normal     No     Motorola WR850G v4.03 Credentials
+   404  exploit/multi/http/movabletype_upgrade_exec                                        2013-01-07       excellent  Yes    Movable Type 4.2x, 4.3x Web Upgrade Remote Code Execution
+   405  exploit/osx/browser/mozilla_mchannel                                               2011-05-10       normal     No     Mozilla Firefox 3.6.16 mChannel Use-After-Free
+   406  exploit/windows/browser/mozilla_mchannel                                           2011-05-10       normal     No     Mozilla Firefox 3.6.16 mChannel Use-After-Free Vulnerability
+   407  exploit/windows/browser/mozilla_reduceright                                        2011-06-21       normal     No     Mozilla Firefox Array.reduceRight() Integer Overflow
+   408  exploit/windows/browser/mozilla_interleaved_write                                  2010-10-25       normal     No     Mozilla Firefox Interleaved document.write/appendChild Memory Corruption
+   409  exploit/windows/browser/nctaudiofile2_setformatlikesample                          2007-01-24       normal     No     NCTAudioFile2 v2.x ActiveX Control SetFormatLikeSample() Buffer Overflow
+   410  exploit/windows/smtp/njstar_smtp_bof                                               2011-10-31       normal     Yes    NJStar Communicator 3.00 MiniSMTP Buffer Overflow
+   411  exploit/windows/http/nscp_authenticated_rce                                        2020-10-20       excellent  Yes    NSClient++ 0.5.2.35 - ExternalScripts Authenticated Remote Code Execution
+   412  exploit/windows/local/nscp_pe                                                      2020-10-20       excellent  Yes    NSClient++ 0.5.2.35 - Privilege escalation
+   413  auxiliary/dos/ntp/ntpd_reserved_dos                                                2009-10-04       normal     No     NTP.org ntpd Reserved Mode Denial of Service
+   414  exploit/multi/http/nuuo_nvrmini_upgrade_rce                                        2018-08-04       excellent  Yes    NUUO NVRmini upgrade_handle.php Remote Command Execution
+   415  exploit/linux/http/nagios_xi_snmptrap_authenticated_rce                            2020-10-20       excellent  Yes    Nagios XI 5.5.0-5.7.3 - Snmptrap Authenticated Remote Code Exection
+   416  exploit/linux/http/nagios_xi_configwizards_authenticated_rce                       2021-02-13       excellent  Yes    Nagios XI 5.5.6 to 5.7.5 - ConfigWizards Authenticated Remote Code Exection
+   417  exploit/linux/http/nagios_xi_mibs_authenticated_rce                                2020-10-20       excellent  Yes    Nagios XI 5.6.0-5.7.3 - Mibs.php Authenticated Remote Code Exection
+   418  exploit/linux/http/nagios_xi_magpie_debug                                          2018-11-14       excellent  Yes    Nagios XI Magpie_debug.php Root Remote Code Execution
+   419  exploit/linux/http/nagios_xi_plugins_check_plugin_authenticated_rce                2019-07-29       excellent  Yes    Nagios XI Prior to 5.6.6 getprofile.sh Authenticated Remote Command Execution
+   420  exploit/linux/http/nagios_xi_plugins_filename_authenticated_rce                    2020-12-19       excellent  Yes    Nagios XI Prior to 5.8.0 - Plugins Filename Authenticated Remote Code Exection
+   421  exploit/unix/webapp/nagios3_history_cgi                                            2012-12-09       great      Yes    Nagios3 history.cgi Host Command Execution
+   422  exploit/unix/webapp/nagios3_statuswml_ping                                         2009-06-22       excellent  No     Nagios3 statuswml.cgi Ping Command Execution
+   423  exploit/windows/http/navicopa_get_overflow                                         2006-09-28       great      Yes    NaviCOPA 2.0.1 URL Handling Buffer Overflow
+   424  exploit/unix/local/netbsd_mail_local                                               2016-07-07       great      No     NetBSD mail.local Privilege Escalation
+   425  auxiliary/scanner/tftp/netdecision_tftp                                            2009-05-16       normal     No     NetDecision 4.2 TFTP Directory Traversal
+   426  exploit/windows/tftp/netdecision_tftp_traversal                                    2009-05-16       excellent  No     NetDecision 4.2 TFTP Writable Directory Traversal Execution
+   427  exploit/windows/http/netdecision_http_bof                                          2012-02-24       normal     Yes    NetDecision 4.5.1 HTTP Server Buffer Overflow
+   428  exploit/windows/novell/netiq_pum_eval                                              2012-11-15       excellent  Yes    NetIQ Privileged User Manager 2.3.1 ldapagnt_eval() Remote Perl Code Execution
+   429  exploit/windows/fileformat/netop                                                   2011-04-28       normal     No     NetOp Remote Control Client 9.5 Buffer Overflow
+   430  exploit/windows/misc/nettransport                                                  2010-01-02       normal     No     NetTransport Download Manager 2.90.510 Buffer Overflow
+   431  exploit/netware/sunrpc/pkernel_callit                                              2009-09-30       good       No     NetWare 6.5 SunRPC Portmapper CALLIT Stack Buffer Overflow
+   432  exploit/windows/misc/netcat110_nt                                                  2004-12-27       great      No     Netcat v1.10 NT Stack Buffer Overflow
+   433  exploit/linux/http/netgear_dgn1000_setup_unauth_exec                               2013-06-05       excellent  Yes    Netgear DGN1000 Setup.cgi Unauthenticated RCE
+   434  exploit/linux/http/netgear_dgn1000b_setup_exec                                     2013-02-06       excellent  No     Netgear DGN1000B setup.cgi Remote Command Execution
+   435  exploit/linux/http/netgear_dnslookup_cmd_exec                                      2017-02-25       excellent  Yes    Netgear DGN2200 dnslookup.cgi Command Injection
+   436  exploit/linux/http/netgear_dgn2200b_pppoe_exec                                     2013-02-15       manual     No     Netgear DGN2200B pppoe.cgi Remote Command Execution
+   437  auxiliary/admin/http/netgear_r7000_backup_cgi_heap_overflow_rce                    2021-04-21       normal     Yes    Netgear R7000 backup.cgi Heap Overflow RCE
+   438  exploit/linux/http/netsweeper_webadmin_unixlogin                                   2020-04-28       excellent  Yes    Netsweeper WebAdmin unixlogin.php Python Code Injection
+   439  exploit/linux/http/nginx_chunked_size                                              2013-05-07       great      Yes    Nginx HTTP Server 1.3.9-1.4.0 Chunked Encoding Stack Buffer Overflow
+   440  exploit/windows/fileformat/nitro_reader_jsapi                                      2017-07-24       excellent  No     Nitro Pro PDF Reader 11.0.3.173 Javascript API Remote Code Execution
+   441  auxiliary/dos/http/nodejs_pipelining                                               2013-10-18       normal     Yes    Node.js HTTP Pipelining Denial of Service
+   442  exploit/windows/local/novell_client_nicm                                           2013-05-22       average    Yes    Novell Client 2 SP3 nicm.sys Local Privilege Escalation
+   443  exploit/windows/local/novell_client_nwfs                                           2008-06-26       average    No     Novell Client 4.91 SP4 nwfs.sys Local Privilege Escalation
+   444  exploit/windows/browser/novell_groupwise_gwcls1_actvx                              2013-01-30       normal     No     Novell GroupWise Client gwcls1.dll ActiveX Remote Code Execution
+   445  exploit/windows/http/novell_messenger_acceptlang                                   2006-04-13       average    No     Novell Messenger Server 2.0 Accept-Language Overflow
+   446  exploit/netware/smb/lsass_cifs                                                     2007-01-21       average    No     Novell NetWare LSASS CIFS.NLM Driver Stack Buffer Overflow
+   447  exploit/windows/novell/zenworks_desktop_agent                                      2005-05-19       good       No     Novell ZENworks 6.5 Desktop/Server Management Overflow
+   448  auxiliary/scanner/http/zenworks_assetmanagement_getconfig                                           normal     No     Novell ZENworks Asset Management 7.5 Configuration Access
+   449  auxiliary/scanner/http/zenworks_assetmanagement_fileaccess                                          normal     No     Novell ZENworks Asset Management 7.5 Remote File Access
+   450  exploit/windows/http/novell_mdm_lfi                                                2013-03-13       excellent  Yes    Novell Zenworks Mobile Managment MDM.php Local File Inclusion Vulnerability
+   451  exploit/windows/fileformat/nuance_pdf_launch_overflow                              2010-10-08       great      No     Nuance PDF Reader v6.0 Launch Stack Buffer Overflow
+   452  exploit/multi/http/op5_license                                                     2012-01-05       excellent  Yes    OP5 license.php Remote Command Execution
+   453  post/osx/gather/safari_lastsession                                                                  normal     No     OSX Gather Safari LastSession.plist
+   454  exploit/windows/ftp/odin_list_reply                                                2010-10-12       good       No     Odin Secure FTP 4.1 Stack Buffer Overflow (LIST)
+   455  exploit/multi/http/open_web_analytics_rce                                          2022-03-18       excellent  Yes    Open Web Analytics 1.7.3 - Remote Code Execution (RCE)
+   456  exploit/windows/ftp/open_ftpd_wbem                                                 2012-06-18       excellent  Yes    Open-FTPD 1.2 Arbitrary File Upload
+   457  exploit/unix/webapp/openemr_sqli_privesc_upload                                    2013-09-16       excellent  Yes    OpenEMR 4.1.1 Patch 14 SQLi Privilege Escalation Remote Code Execution
+   458  auxiliary/sqli/openemr/openemr_sqli_dump                                           2019-05-17       normal     Yes    OpenEMR 5.0.1 Patch 6 SQLi Dump
+   459  exploit/unix/webapp/openmediavault_rpc_rce                                         2020-09-28       excellent  Yes    OpenMediaVault rpc.php Authenticated PHP Code Injection
+   460  auxiliary/dos/ssl/openssl_aesni                                                    2013-02-05       normal     No     OpenSSL TLS 1.1 and 1.2 AES-NI DoS
+   461  exploit/windows/tftp/opentftp_error_code                                           2008-07-05       average    No     OpenTFTP SP 1.4 Error Packet Overflow
+   462  exploit/linux/http/opentsdb_yrange_cmd_injection                                   2020-11-18       excellent  Yes    OpenTSDB 2.4.0 unauthenticated command injection
+   463  exploit/linux/http/opentsdb_key_cmd_injection                                      2023-07-01       excellent  Yes    OpenTSDB 2.4.1 unauthenticated command injection
+   464  exploit/unix/webapp/openx_banner_edit                                              2009-11-24       excellent  Yes    OpenX banner-edit.php File Upload PHP Code Execution
+   465  exploit/linux/http/openfiler_networkcard_exec                                      2012-09-04       excellent  Yes    Openfiler v2.x NetworkCard Command Execution
+   466  auxiliary/sqli/oracle/droptable_trigger                                            2009-01-13       normal     No     Oracle DB SQL Injection in MDSYS.SDO_TOPO_DROP_FTBL Trigger
+   467  auxiliary/sqli/oracle/dbms_cdc_ipublish                                            2008-10-22       normal     No     Oracle DB SQL Injection via SYS.DBMS_CDC_IPUBLISH.ALTER_HOTLOG_INTERNAL_CSOURCE
+   468  auxiliary/sqli/oracle/dbms_cdc_publish                                             2008-10-22       normal     No     Oracle DB SQL Injection via SYS.DBMS_CDC_PUBLISH.ALTER_AUTOLOG_CHANGE_SOURCE
+   469  auxiliary/sqli/oracle/dbms_cdc_publish3                                            2010-10-13       normal     No     Oracle DB SQL Injection via SYS.DBMS_CDC_PUBLISH.CREATE_CHANGE_SET
+   470  auxiliary/sqli/oracle/dbms_cdc_publish2                                            2010-04-26       normal     No     Oracle DB SQL Injection via SYS.DBMS_CDC_PUBLISH.DROP_CHANGE_SOURCE
+   471  auxiliary/sqli/oracle/dbms_cdc_subscribe_activate_subscription                     2005-04-18       normal     No     Oracle DB SQL Injection via SYS.DBMS_CDC_SUBSCRIBE.ACTIVATE_SUBSCRIPTION
+   472  auxiliary/sqli/oracle/dbms_metadata_get_granted_xml                                2008-01-05       normal     No     Oracle DB SQL Injection via SYS.DBMS_METADATA.GET_GRANTED_XML
+   473  auxiliary/sqli/oracle/dbms_metadata_get_xml                                        2008-01-05       normal     No     Oracle DB SQL Injection via SYS.DBMS_METADATA.GET_XML
+   474  auxiliary/sqli/oracle/dbms_metadata_open                                           2008-01-05       normal     No     Oracle DB SQL Injection via SYS.DBMS_METADATA.OPEN
+   475  auxiliary/sqli/oracle/lt_compressworkspace                                         2008-10-13       normal     No     Oracle DB SQL Injection via SYS.LT.COMPRESSWORKSPACE
+   476  auxiliary/sqli/oracle/lt_findricset_cursor                                         2007-10-17       normal     No     Oracle DB SQL Injection via SYS.LT.FINDRICSET Evil Cursor Method
+   477  auxiliary/sqli/oracle/lt_mergeworkspace                                            2008-10-22       normal     No     Oracle DB SQL Injection via SYS.LT.MERGEWORKSPACE
+   478  auxiliary/sqli/oracle/lt_removeworkspace                                           2008-10-13       normal     No     Oracle DB SQL Injection via SYS.LT.REMOVEWORKSPACE
+   479  auxiliary/sqli/oracle/lt_rollbackworkspace                                         2009-05-04       normal     No     Oracle DB SQL Injection via SYS.LT.ROLLBACKWORKSPACE
+   480  exploit/windows/browser/oracle_webcenter_checkoutandopen                           2013-04-16       excellent  No     Oracle WebCenter Content CheckOutAndOpen.dll ActiveX Remote Code Execution
+   481  exploit/multi/http/orientdb_exec                                                   2017-07-13       good       Yes    OrientDB 2.2.x Remote Code Execution
+   482  auxiliary/scanner/ftp/pcman_ftp_traversal                                          2015-09-28       normal     Yes    PCMan FTP Server 2.0.7 Directory Traversal Information Disclosure
+   483  exploit/multi/fileformat/archive_tar_arb_file_write                                2020-11-17       excellent  No     PEAR Archive_Tar 1.4.10 Arbitrary File Write
+   484  exploit/multi/http/php_volunteer_upload_exec                                       2012-05-28       excellent  No     PHP Volunteer Management System v1.0.2 Arbitrary File Upload Vulnerability
+   485  exploit/unix/webapp/php_charts_exec                                                2013-01-16       excellent  Yes    PHP-Charts v1.0 PHP Code Execution Vulnerability
+   486  exploit/multi/http/phpmoadmin_exec                                                 2015-03-03       excellent  Yes    PHPMoAdmin 1.1.2 Remote Code Execution
+   487  exploit/windows/misc/poppeeper_date                                                2009-02-27       normal     No     POP Peeper v3.4 DATE Buffer Overflow
+   488  exploit/windows/misc/poppeeper_uidl                                                2009-02-27       normal     No     POP Peeper v3.4 UIDL Buffer Overflow
+   489  exploit/windows/http/psoproxy91_overflow                                           2004-02-20       average    Yes    PSO Proxy v0.91 Stack Buffer Overflow
+   490  auxiliary/dos/windows/tftp/pt360_write                                             2008-10-29       normal     No     PacketTrap TFTP Server 2.2.5459.0 DoS
+   491  exploit/multi/http/pandora_upload_exec                                             2010-11-30       excellent  Yes    Pandora FMS v3.1 Auth Bypass and Arbitrary File Upload Vulnerability
+   492  exploit/windows/browser/pcvue_func                                                 2011-10-05       average    No     PcVue 10.0 SV.UIGrdCtrl.1 'LoadObject()/SaveObject()' Trusted DWORD Vulnerability
+   493  exploit/windows/fileformat/proshow_load_bof                                        2012-06-06       normal     No     Photodex ProShow Producer 5.0.3256 load File Handling Buffer Overflow
+   494  exploit/linux/http/pineapp_ldapsyncnow_exec                                        2013-07-26       excellent  Yes    PineApp Mail-SeCure ldapsyncnow.php Arbitrary Command Execution
+   495  exploit/linux/http/pineapp_livelog_exec                                            2013-07-26       excellent  Yes    PineApp Mail-SeCure livelog.html Arbitrary Command Execution
+   496  exploit/linux/http/pineapp_test_li_conn_exec                                       2013-07-26       excellent  Yes    PineApp Mail-SeCure test_li_connection.php Arbitrary Command Execution
+   497  exploit/multi/http/playsms_uploadcsv_exec                                          2017-05-21       excellent  Yes    PlaySMS import.php Authenticated CSV File Upload Code Execution
+   498  exploit/multi/http/playsms_template_injection                                      2020-02-05       excellent  Yes    PlaySMS index.php Unauthenticated Template Injection Code Execution
+   499  exploit/multi/http/playsms_filename_exec                                           2017-05-21       excellent  Yes    PlaySMS sendfromfile.php Authenticated "Filename" Field Code Execution
+   500  exploit/windows/http/plesk_mylittleadmin_viewstate                                 2020-05-15       excellent  Yes    Plesk/myLittleAdmin ViewState .NET Deserialization
+   501  exploit/multi/http/pmwiki_pagelist                                                 2011-11-09       excellent  Yes    PmWiki pagelist.php Remote PHP Code Injection Exploit
+   502  exploit/windows/misc/poisonivy_21x_bof                                             2016-06-03       normal     Yes    Poison Ivy 2.1.x C2 Buffer Overflow
+   503  post/windows/gather/ntds_location                                                                   normal     No     Post Windows Gather NTDS.DIT Location
+   504  post/windows/manage/powershell/build_net_code                                      2012-08-14       excellent  No     Powershell .NET Compiler
+   505  exploit/windows/ftp/proftp_banner                                                  2009-08-25       normal     No     ProFTP 2.9 Banner Remote Buffer Overflow
+   506  exploit/linux/ftp/proftp_sreplace                                                  2006-11-26       great      Yes    ProFTPD 1.2 - 1.3.0 sreplace Buffer Overflow (Linux)
+   507  exploit/freebsd/ftp/proftp_telnet_iac                                              2010-11-01       great      Yes    ProFTPD 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (FreeBSD)
+   508  exploit/linux/ftp/proftp_telnet_iac                                                2010-11-01       great      Yes    ProFTPD 1.3.2rc3 - 1.3.3b Telnet IAC Buffer Overflow (Linux)
+   509  exploit/unix/ftp/proftpd_modcopy_exec                                              2015-04-22       excellent  Yes    ProFTPD 1.3.5 Mod_Copy Command Execution
+   510  exploit/unix/ftp/proftpd_133c_backdoor                                             2010-12-02       excellent  No     ProFTPD-1.3.3c Backdoor Command Execution
+   511  exploit/windows/fileformat/proshow_cellimage_bof                                   2009-08-20       great      No     ProShow Gold v4.0.2549 (PSH File) Stack Buffer Overflow
+   512  exploit/windows/scada/procyon_core_server                                          2011-09-08       normal     Yes    Procyon Core Server HMI Coreservice.exe Stack Buffer Overflow
+   513  exploit/windows/proxy/proxypro_http_get                                            2004-02-23       great      No     Proxy-Pro Professional GateKeeper 4.7 GET Request Overflow
+   514  auxiliary/admin/smb/psexec_ntdsgrab                                                                 normal     No     PsExec NTDS.dit And SYSTEM Hive Download Utility
+   515  exploit/windows/imap/eudora_list                                                   2005-12-20       great      Yes    Qualcomm WorldMail 3.0 IMAPD LIST Buffer Overflow
+   516  exploit/windows/tftp/quick_tftp_pro_mode                                           2008-03-27       good       No     Quick FTP Pro 2.1 Transfer-Mode Overflow
+   517  exploit/windows/ftp/quickshare_traversal_write                                     2011-02-03       excellent  Yes    QuickShare File Server 1.2.1 Directory Traversal Vulnerability
+   518  exploit/unix/webapp/qtss_parse_xml_exec                                            2003-02-24       excellent  No     QuickTime Streaming Server parse_xml.cgi Remote Execution
+   519  exploit/windows/browser/barcode_ax49                                               2007-06-22       normal     No     RKD Software BarCodeAx.dll v4.9 ActiveX Remote Stack Buffer Overflow
+   520  auxiliary/scanner/http/rpyc_rce                                                    2023-02-19       normal     No     RPyC 4.1.0 through 4.1.1 Remote Command Execution
+   521  exploit/windows/games/racer_503beta5                                               2008-08-10       great      No     Racer v0.5.3 Beta 5 Buffer Overflow
+   522  exploit/windows/local/razer_zwopenprocess                                          2017-03-22       normal     Yes    Razer Synapse rzpnk.sys ZwOpenProcess
+   523  exploit/linux/http/rconfig_ajaxarchivefiles_rce                                    2020-03-11       good       Yes    Rconfig 3.x Chained Remote Code Execution
+   524  exploit/windows/browser/real_arcade_installerdlg                                   2011-04-03       normal     No     Real Networks Arcade Games StubbyUtil.ProcessMgr ActiveX Arbitrary Code Execution
+   525  exploit/windows/fileformat/real_networks_netzip_bof                                2011-01-30       good       No     Real Networks Netzip Classic 7.5.1 86 File Parsing Buffer Overflow Vulnerability
+   526  exploit/windows/browser/realplayer_import                                          2007-10-18       normal     No     RealPlayer ierpplug.dll ActiveX Control Playlist Name Buffer Overflow
+   527  exploit/windows/browser/realplayer_console                                         2008-03-08       normal     No     RealPlayer rmoc3260.dll ActiveX Control Heap Corruption
+   528  exploit/windows/vnc/realvnc_client                                                 2001-01-29       normal     No     RealVNC 3.3.7 Client Buffer Overflow
+   529  exploit/linux/http/cfme_manageiq_evm_upload_exec                                   2013-09-04       excellent  Yes    Red Hat CloudForms Management Engine 5.1 agent/linuxpkgs Path Traversal
+   530  auxiliary/admin/http/cfme_manageiq_evm_pass_reset                                  2013-11-12       normal     No     Red Hat CloudForms Management Engine 5.1 miq_policy/explorer SQL Injection
+   531  exploit/linux/http/piranha_passwd_exec                                             2000-04-04       excellent  No     RedHat Piranha Virtual Server Package passwd.php3 Arbitrary Command Execution
+   532  auxiliary/server/regsvr32_command_delivery_server                                                   normal     No     Regsvr32.exe (.sct) Command Delivery Server
+   533  exploit/linux/http/roxy_wi_exec                                                    2022-07-06       excellent  Yes    Roxy-WI Prior to 6.1.1.0 Unauthenticated Command Injection RCE
+   534  exploit/windows/fileformat/somplplayer_m3u                                         2010-01-22       great      No     S.O.M.P.L 1.0 Player Buffer Overflow
+   535  auxiliary/scanner/http/s40_traversal                                               2011-04-07       normal     No     S40 0.4.2 CMS Directory Traversal Vulnerability
+   536  exploit/windows/http/sapdb_webtools                                                2007-07-05       great      No     SAP DB 7.4 WebTools Buffer Overflow
+   537  auxiliary/admin/maxdb/maxdb_cons_exec                                              2008-01-09       normal     No     SAP MaxDB cons.exe Remote Command Injection
+   538  exploit/windows/lpd/saplpd                                                         2008-02-04       good       No     SAP SAPLPD 6.28 Buffer Overflow
+   539  exploit/windows/http/shoutcast_format                                              2004-12-23       average    Yes    SHOUTcast DNAS/win32 1.9.4 File Request Format String Overflow
+   540  exploit/windows/sip/sipxezphone_cseq                                               2006-07-10       great      No     SIPfoundry sipXezPhone 0.35a CSeq Field Overflow
+   541  exploit/windows/sip/sipxphone_cseq                                                 2006-07-10       great      No     SIPfoundry sipXphone 2.6.0.27 CSeq Buffer Overflow
+   542  exploit/windows/misc/splayer_content_type                                          2011-05-04       normal     No     SPlayer 3.7 Content-Type Buffer Overflow
+   543  auxiliary/fuzzers/ssh/ssh_version_15                                                                normal     No     SSH 1.5 Version Fuzzer
+   544  auxiliary/fuzzers/ssh/ssh_version_2                                                                 normal     No     SSH 2.0 Version Fuzzer
+   545  auxiliary/scanner/http/svn_wcdb_scanner                                                             normal     No     SVN wc.db Scanner
+   546  exploit/windows/local/bits_ntlm_token_impersonation                                2019-12-06       great      Yes    SYSTEM token impersonation through NTLM bits authentication on missing WinRM Service.
+   547  exploit/apple_ios/browser/safari_jit                                               2016-08-25       good       No     Safari Webkit JIT Exploit for iOS 7.1.2
+   548  exploit/multi/samba/nttrans                                                        2003-04-07       average    No     Samba 2.2.2 - 2.2.6 nttrans Buffer Overflow
+   549  exploit/linux/http/samsung_srv_1670d_upload_exec                                   2017-03-14       good       Yes    Samsung SRN-1670D Web Viewer Version 1.0.0.193 Arbitrary File Read and Upload
+   550  exploit/windows/browser/samsung_security_manager_put                               2016-08-05       excellent  No     Samsung Security Manager 1.4 ActiveMQ Broker Service PUT Method Remote Code Execution
+   551  exploit/windows/fileformat/sascam_get                                              2008-12-29       low        No     SasCam Webcam Server v.2.6.5 Get() Method Buffer Overflow
+   552  exploit/windows/http/savant_31_overflow                                            2002-09-10       great      Yes    Savant 3.1 Web Server Overflow
+   553  auxiliary/scanner/ssl/bleichenbacher_oracle                                        2009-06-17       normal     No     Scanner for Bleichenbacher Oracle in RSA PKCS #1 v1.5
+   554  exploit/windows/ftp/seagull_list_reply                                             2010-10-12       good       No     Seagull FTP v3.3 Build 409 Stack Buffer Overflow
+   555  exploit/windows/pop3/seattlelab_pass                                               2003-05-07       great      No     Seattle Lab Mail 5.5 POP3 Buffer Overflow
+   556  exploit/multi/http/sflog_upload_exec                                               2012-07-06       excellent  Yes    Sflog! CMS 1.0 Arbitrary File Upload Vulnerability
+   557  exploit/windows/fileformat/shadow_stream_recorder_bof                              2010-03-29       normal     No     Shadow Stream Recorder 3.0.1.7 Buffer Overflow
+   558  exploit/windows/misc/shixxnote_font                                                2004-10-04       great      No     ShixxNOTE 6.net Font Field Overflow
+   559  exploit/windows/scada/winlog_runtime_2                                             2012-06-04       normal     No     Sielco Sistemi Winlog Buffer Overflow 2.07.14 - 2.07.16
+   560  exploit/windows/scada/factorylink_vrn_09                                           2011-03-21       average    No     Siemens FactoryLink vrn.exe Opcode 9 Buffer Overflow
+   561  auxiliary/scanner/http/simple_webserver_traversal                                  2013-01-03       normal     No     Simple Web Server 2.3-RC1 Directory Traversal
+   562  exploit/windows/http/smartermail_rce                                               2019-04-17       excellent  Yes    SmarterTools SmarterMail less than build 6985 - .NET Deserialization Remote Code Execution
+   563  exploit/multi/http/snortreport_exec                                                2011-09-19       excellent  No     Snortreport nmap.php/nbtscan.php Remote Command Execution
+   564  auxiliary/scanner/http/sockso_traversal                                            2012-03-14       normal     No     Sockso Music Host Server 1.5 Directory Traversal
+   565  exploit/windows/smtp/wmailserver                                                   2005-07-11       average    No     SoftiaCom WMailserver 1.0 Buffer Overflow
+   566  exploit/linux/http/solarview_unauth_rce_cve_2023_23333                             2023-05-15       excellent  Yes    SolarView Compact unauthenticated remote command execution vulnerability.
+   567  exploit/windows/misc/solarwinds_amqp_deserialization                               2022-10-19       excellent  No     SolarWinds Information Service (SWIS) .NET Deserialization From AMQP RCE
+   568  auxiliary/dos/windows/tftp/solarwinds                                              2010-05-21       normal     No     SolarWinds TFTP Server 10.4.0.10 Denial of Service
+   569  exploit/solaris/telnet/ttyprompt                                                   2002-01-18       excellent  No     Solaris in.telnetd TTYPROMPT Buffer Overflow
+   570  exploit/windows/http/solarwinds_fsm_userlogin                                      2015-03-13       excellent  Yes    Solarwinds Firewall Security Manager 6.6.5 Client Session Handling Vulnerability
+   571  auxiliary/gather/solarwinds_orion_sqli                                             2015-02-24       normal     No     Solarwinds Orion AccountManagement.asmx GetAccounts Admin Creation
+   572  exploit/windows/http/solarwinds_storage_manager_sql                                2011-12-07       excellent  Yes    Solarwinds Storage Manager 5.1.0 SQL Injection
+   573  exploit/windows/misc/solidworks_workgroup_pdmwservice_file_write                   2014-02-22       good       Yes    SolidWorks Workgroup PDM 2014 pdmwService.exe Arbitrary File Write
+   574  exploit/windows/browser/aventail_epi_activex                                       2010-08-19       normal     No     SonicWALL Aventail epi.dll AuthCredential Format String
+   575  exploit/linux/local/sophos_wpa_clear_keys                                          2013-09-06       excellent  Yes    Sophos Web Protection Appliance clear_keys.pl Local Privilege Escalation
+   576  auxiliary/admin/http/sophos_wpa_traversal                                          2013-04-03       normal     No     Sophos Web Protection Appliance patience.cgi Directory Traversal
+   577  exploit/multi/http/spree_search_exec                                               2011-10-05       excellent  No     Spreecommerce 0.60.1 Arbitrary Command Execution
+   578  exploit/multi/misc/batik_svg_java                                                  2012-05-11       excellent  No     Squiggle 1.7 SVG Browser Java Code Execution
+   579  exploit/windows/fileformat/mymp3player_m3u                                         2010-03-18       good       No     Steinberg MyMP3Player 3.0 Buffer Overflow
+   580  exploit/windows/fileformat/subtitle_processor_m3u_bof                              2011-04-26       normal     No     Subtitle Processor 7.7.1 .M3U SEH Unicode Buffer Overflow
+   581  exploit/windows/scada/sunway_force_control_netdbsrv                                2011-09-22       great      No     Sunway Forcecontrol SNMP NetDBServer.exe Opcode 0x57
+   582  exploit/linux/http/smt_ipmi_close_window_bof                                       2013-11-06       good       Yes    Supermicro Onboard IPMI close_window.cgi Buffer Overflow
+   583  auxiliary/scanner/http/smt_ipmi_url_redirect_traversal                             2013-11-06       normal     No     Supermicro Onboard IPMI url_redirect.cgi Authenticated Directory Traversal
+   584  exploit/windows/http/sybase_easerver                                               2005-07-25       average    No     Sybase EAServer 5.2 Remote Stack Buffer Overflow
+   585  auxiliary/scanner/http/sybase_easerver_traversal                                   2011-05-25       normal     No     Sybase Easerver 6.3 Directory Traversal
+   586  exploit/linux/ssh/symantec_smg_ssh                                                 2012-08-27       excellent  No     Symantec Messaging Gateway 9.5 Default SSH Password Vulnerability
+   587  auxiliary/scanner/http/symantec_brightmail_logfile                                 2012-11-30       normal     No     Symantec Messaging Gateway 9.5 Log File Download Vulnerability
+   588  exploit/windows/antivirus/ams_hndlrsvc                                             2010-07-26       excellent  No     Symantec System Center Alert Management System (hndlrsvc.exe) Arbitrary Command Execution
+   589  exploit/windows/antivirus/ams_xfr                                                  2009-04-28       excellent  No     Symantec System Center Alert Management System (xfr.exe) Arbitrary Command Execution
+   590  exploit/linux/http/symantec_web_gateway_restore                                    2014-12-16       excellent  Yes    Symantec Web Gateway 5 restore.php Post Authentication Command Injection
+   591  exploit/linux/http/symantec_web_gateway_pbcontrol                                  2012-07-23       excellent  Yes    Symantec Web Gateway 5.0.2.18 pbcontrol.php Command Injection
+   592  exploit/linux/http/symantec_web_gateway_file_upload                                2012-05-17       excellent  Yes    Symantec Web Gateway 5.0.2.8 Arbitrary PHP File Upload Vulnerability
+   593  exploit/linux/http/symantec_web_gateway_exec                                       2012-05-17       excellent  Yes    Symantec Web Gateway 5.0.2.8 ipchange.php Command Injection
+   594  exploit/linux/http/symantec_web_gateway_lfi                                        2012-05-17       excellent  Yes    Symantec Web Gateway 5.0.2.8 relfile File Inclusion Vulnerability
+   595  exploit/windows/antivirus/symantec_workspace_streaming_exec                        2014-05-12       excellent  Yes    Symantec Workspace Streaming ManagementAgentServer.putFile XMLRPC Request Arbitrary File Upload
+   596  exploit/windows/fileformat/syncbreeze_xml                                          2017-03-29       normal     No     Sync Breeze Enterprise 9.5.16 - Import Command Buffer Overflow
+   597  exploit/linux/http/synology_dsm_smart_exec_auth                                    2017-11-08       excellent  Yes    Synology DiskStation Manager smart.cgi Remote Command Execution
+   598  exploit/windows/ssh/sysax_ssh_username                                             2012-02-27       normal     Yes    Sysax 5.53 SSH Username Buffer Overflow
+   599  exploit/windows/http/sysax_create_folder                                           2012-07-29       normal     No     Sysax Multi Server 5.64 Create Folder Buffer Overflow
+   600  auxiliary/dos/windows/ssh/sysax_sshd_kexchange                                     2013-03-17       normal     No     Sysax Multi-Server 6.10 SSHD Key Exchange Denial of Service
+   601  exploit/windows/smtp/mailcarrier_smtp_ehlo                                         2004-10-26       good       Yes    TABS MailCarrier v2.51 SMTP EHLO Overflow
+   602  exploit/windows/tftp/tftpserver_wrq_bof                                            2008-03-26       normal     No     TFTP Server for Windows 1.4 ST WRQ Buffer Overflow
+   603  exploit/windows/tftp/tftpdwin_long_filename                                        2006-09-21       great      No     TFTPDWIN v0.4.2 Long Filename Buffer Overflow
+   604  exploit/linux/http/totolink_unauth_rce_cve_2023_30013                              2023-05-05       excellent  Yes    TOTOLINK Wireless Routers unauthenticated remote command execution vulnerability.
+   605  exploit/windows/misc/talkative_response                                            2009-03-17       normal     No     Talkative IRC v0.4.4.16 Response Buffer Overflow
+   606  auxiliary/dos/http/tautulli_shutdown_exec                                                           normal     No     Tautulli v2.1.9 - Shutdown Denial of Service
+   607  exploit/windows/http/telerik_rau_deserialization                                   2019-12-09       excellent  Yes    Telerik UI ASP.NET AJAX RadAsyncUpload Deserialization
+   608  exploit/linux/http/terramaster_unauth_rce_cve_2020_35665                           2020-12-12       excellent  Yes    TerraMaster TOS 4.2.06 or lower - Unauthenticated Remote Code Execution
+   609  exploit/linux/http/terramaster_unauth_rce_cve_2021_45837                           2021-12-24       excellent  Yes    TerraMaster TOS 4.2.15 or lower - RCE chain from unauthenticated to root via session crafting.
+   610  exploit/linux/http/terramaster_unauth_rce_cve_2022_24990                           2022-03-07       excellent  Yes    TerraMaster TOS 4.2.29 or lower - Unauthenticated RCE chaining CVE-2022-24990 and CVE-2022-24989
+   611  exploit/multi/http/testlink_upload_exec                                            2012-08-13       excellent  Yes    TestLink v1.9.3 Arbitrary File Upload Vulnerability
+   612  exploit/windows/ftp/wftpd_size                                                     2006-08-23       average    No     Texas Imperial Software WFTPD 3.23 SIZE Overflow
+   613  exploit/multi/http/mma_backdoor_upload                                             2012-04-02       excellent  Yes    Th3 MMA mma.php Backdoor Arbitrary File Upload
+   614  exploit/windows/misc/tiny_identd_overflow                                          2007-05-14       average    No     TinyIdentD 2.2 Stack Buffer Overflow
+   615  auxiliary/dos/windows/ftp/titan626_site                                            2008-10-14       normal     No     Titan FTP Server 6.26.630 SITE WHO DoS
+   616  exploit/aix/rpc_ttdbserverd_realpath                                               2009-06-17       great      No     ToolTalk rpc.ttdbserverd _tt_internal_realpath Buffer Overflow (AIX)
+   617  exploit/windows/fileformat/total_video_player_ini_bof                              2013-11-24       normal     No     Total Video Player 1.3.1 (Settings.ini) - SEH Buffer Overflow
+   618  exploit/multi/http/totaljs_cms_widget_exec                                         2019-08-30       excellent  Yes    Total.js CMS 12 Widget JavaScript Code Injection
+   619  auxiliary/scanner/http/totaljs_traversal                                           2019-02-18       normal     Yes    Total.js prior to 3.2.4 Directory Traversal
+   620  exploit/multi/http/traq_plugin_exec                                                2011-12-12       excellent  Yes    Traq admincp/common.php Remote Code Execution
+   621  exploit/windows/ftp/trellian_client_pasv                                           2010-04-11       normal     No     Trellian FTP Client 3.01 PASV Remote Buffer Overflow
+   622  exploit/windows/antivirus/trendmicro_serverprotect                                 2007-02-20       good       No     Trend Micro ServerProtect 5.58 Buffer Overflow
+   623  exploit/windows/antivirus/trendmicro_serverprotect_createbinding                   2007-05-07       good       No     Trend Micro ServerProtect 5.58 CreateBinding() Buffer Overflow
+   624  exploit/windows/antivirus/trendmicro_serverprotect_earthagent                      2007-05-07       good       No     Trend Micro ServerProtect 5.58 EarthAgent.EXE Buffer Overflow
+   625  exploit/multi/http/trendmicro_threat_discovery_admin_sys_time_cmdi                 2017-04-10       excellent  Yes    Trend Micro Threat Discovery Appliance admin_sys_time.cgi Remote Command Execution
+   626  exploit/windows/misc/trendmicro_cmdprocessor_addtask                               2011-12-07       good       No     TrendMicro Control Manger CmdProcessor.exe Stack Buffer Overflow
+   627  auxiliary/admin/http/trendmicro_dlp_traversal                                      2009-01-09       normal     No     TrendMicro Data Loss Prevention 5.5 Directory Traversal
+   628  exploit/unix/webapp/trixbox_ce_endpoint_devicemap_rce                              2020-04-28       excellent  Yes    TrixBox CE endpoint_devicemap.php Authenticated Command Execution
+   629  exploit/windows/fileformat/tugzip                                                  2008-10-28       good       No     TugZip 3.5 Zip File Parsing Buffer Overflow Vulnerability
+   630  exploit/unix/webapp/tuleap_rest_unserialize_exec                                   2017-10-23       excellent  Yes    Tuleap 9.6 Second-Order PHP Object Injection
+   631  exploit/windows/browser/tumbleweed_filetransfer                                    2008-04-07       great      No     Tumbleweed FileTransfer vcst_eu.dll ActiveX Control Buffer Overflow
+   632  exploit/windows/ftp/turboftp_port                                                  2012-10-03       great      Yes    Turbo FTP Server 1.30.823 PORT Overflow
+   633  post/multi/gather/fetchmailrc_creds                                                                 normal     No     UNIX Gather .fetchmailrc Credentials
+   634  post/multi/gather/netrc_creds                                                                       normal     No     UNIX Gather .netrc Credentials
+   635  exploit/windows/browser/ubisoft_uplay_cmd_exec                                     2012-07-29       normal     No     Ubisoft uplay 2.0.3 ActiveX Control Arbitrary Code Execution
+   636  exploit/windows/vnc/ultravnc_client                                                2006-04-04       normal     No     UltraVNC 1.0.1 Client Buffer Overflow
+   637  exploit/windows/vnc/ultravnc_viewer_bof                                            2008-02-06       normal     No     UltraVNC 1.0.2 Client (vncviewer.exe) Buffer Overflow
+   638  exploit/linux/http/unraid_auth_bypass_exec                                         2020-02-10       excellent  Yes    Unraid 6.8.0 Auth Bypass PHP Code Execution
+   639  exploit/unix/irc/unreal_ircd_3281_backdoor                                         2010-06-12       excellent  No     UnrealIRCD 3.2.8.1 Backdoor Command Execution
+   640  exploit/unix/http/vmturbo_vmtadmin_exec_noauth                                     2014-06-25       excellent  Yes    VMTurbo Operations Manager vmtadmin.cgi Remote Command Execution
+   641  auxiliary/dos/ftp/vsftpd_232                                                       2011-02-03       normal     Yes    VSFTPD 2.3.2 Denial of Service
+   642  exploit/unix/ftp/vsftpd_234_backdoor                                               2011-07-03       excellent  No     VSFTPD v2.3.4 Backdoor Command Execution
+   643  exploit/windows/fileformat/varicad_dwb                                             2010-03-17       great      No     VariCAD 2010-2.05 EN (DWB File) Stack Buffer Overflow
+   644  exploit/windows/misc/veeam_one_agent_deserialization                               2020-04-15       normal     Yes    Veeam ONE Agent .NET Deserialization
+   645  auxiliary/dos/windows/ftp/vicftps50_list                                           2008-10-24       normal     No     Victory FTP Server 5.0 LIST DoS
+   646  exploit/windows/local/virtual_box_guest_additions                                  2014-07-15       average    Yes    VirtualBox Guest Additions VBoxGuest.sys Privilege Escalation
+   647  exploit/windows/browser/imgeviewer_tifmergemultifiles                              2010-03-03       normal     No     Viscom Image Viewer CP Pro 8.0/Gold 6.0 ActiveX Control
+   648  exploit/windows/browser/viscom_movieplayer_drawtext                                2010-01-12       normal     No     Viscom Software Movie Player Pro SDK ActiveX 6.8
+   649  exploit/linux/http/wanem_exec                                                      2012-08-12       excellent  Yes    WAN Emulator v2.3 Command Execution
+   650  exploit/windows/fileformat/wm_downloader_m3u                                       2010-07-28       normal     No     WM Downloader 3.1.2.2 Buffer Overflow
+   651  auxiliary/server/wpad                                                                               normal     No     WPAD.dat File Server
+   652  exploit/windows/ftp/wsftp_server_503_mkd                                           2004-11-29       great      Yes    WS-FTP Server 5.03 MKD Overflow
+   653  exploit/windows/ftp/warftpd_165_pass                                               1998-03-19       average    No     War-FTPD 1.65 Password Overflow
+   654  exploit/windows/ftp/warftpd_165_user                                               1998-03-19       average    No     War-FTPD 1.65 Username Overflow
+   655  exploit/linux/http/webid_converter                                                 2011-07-05       excellent  Yes    WeBid converter.php Remote PHP Code Injection
+   656  exploit/linux/http/webcalendar_settings_exec                                       2012-04-23       excellent  Yes    WebCalendar 1.2.4 Pre-Auth Remote Code Injection
+   657  exploit/windows/browser/webex_ucf_newobject                                        2008-08-06       good       No     WebEx UCF atucfobj.dll ActiveX NewObject Method Buffer Overflow
+   658  exploit/unix/webapp/webtester_exec                                                 2013-10-17       excellent  Yes    WebTester 5.x Command Execution
+   659  exploit/unix/webapp/webmin_show_cgi_exec                                           2012-09-06       excellent  Yes    Webmin /file/show.cgi Remote Command Execution
+   660  auxiliary/admin/webmin/edit_html_fileaccess                                        2012-09-06       normal     No     Webmin edit_html.cgi file Parameter Traversal Arbitrary File Access
+   661  exploit/linux/http/webmin_backdoor                                                 2019-08-10       excellent  Yes    Webmin password_change.cgi Backdoor
+   662  exploit/multi/http/wikka_spam_exec                                                 2011-11-30       excellent  Yes    WikkaWiki 1.3.2 Spam Logging PHP Injection
+   663  exploit/windows/browser/windvd7_applicationtype                                    2007-03-20       normal     No     WinDVD7 IASystemInfo.DLL ActiveX Control Buffer Overflow
+   664  auxiliary/dos/windows/ftp/winftp230_nlst                                           2008-09-26       normal     No     WinFTP 2.3.0 NLST Denial of Service
+   665  exploit/windows/browser/winzip_fileview                                            2007-11-02       normal     No     WinZip FileView (WZFILEVIEW.FileViewCtrl.61) ActiveX Buffer Overflow
+   666  exploit/windows/ftp/winaxe_server_ready                                            2016-11-03       good       No     WinaXe 7.7 FTP Client Remote Buffer Overflow
+   667  exploit/windows/browser/winamp_ultravox                                            2008-01-18       normal     No     Winamp Ultravox Streaming Metadata (in_mp3.dll) Buffer Overflow
+   668  exploit/windows/local/bypassuac_windows_store_filesys                              2019-08-22       manual     Yes    Windows 10 UAC Protection Bypass Via Windows Store (WSReset.exe)
+   669  exploit/windows/local/bypassuac_windows_store_reg                                  2019-02-19       manual     Yes    Windows 10 UAC Protection Bypass Via Windows Store (WSReset.exe) and Registry
+   670  exploit/windows/local/capcom_sys_exec                                              1999-01-01       normal     Yes    Windows Capcom.sys Kernel Execution Exploit (x64 only)
+   671  exploit/windows/local/cve_2023_28252_clfs_driver                                   2023-04-11       good       Yes    Windows Common Log File System Driver (clfs.sys) Elevation of Privilege Vulnerability
+   672  payload/cmd/windows/download_exec_vbs                                                               normal     No     Windows Executable Download and Execute (via .vbs)
+   673  post/windows/gather/credentials/epo_sql                                                             normal     No     Windows Gather McAfee ePO 4.6 Config SQL Credentials
+   674  post/windows/gather/credentials/steam                                                               normal     No     Windows Gather Steam Client Session Collector.
+   675  exploit/windows/browser/ms08_053_mediaencoder                                      2008-09-09       normal     No     Windows Media Encoder 9 wmex.dll ActiveX Buffer Overflow
+   676  exploit/windows/misc/wireshark_lua                                                 2011-07-18       excellent  No     Wireshark console.lua Pre-Loading Script Execution
+   677  exploit/windows/misc/wireshark_packet_dect                                         2011-04-18       good       No     Wireshark packet-dect.c Stack Buffer Overflow
+   678  exploit/windows/fileformat/wireshark_packet_dect                                   2011-04-18       good       No     Wireshark packet-dect.c Stack Buffer Overflow (local)
+   679  exploit/windows/fileformat/wireshark_mpeg_overflow                                 2014-03-20       good       No     Wireshark wiretap/mpeg.c Stack Buffer Overflow
+   680  exploit/unix/webapp/wp_foxypress_upload                                            2012-06-05       excellent  Yes    WordPress Plugin Foxypress uploadify.php Arbitrary Code Execution
+   681  auxiliary/gather/wp_w3_total_cache_hash_extract                                                     normal     No     WordPress W3-Total-Cache Plugin 0.9.2.4 (or before) Username and Hash Extract
+   682  exploit/unix/webapp/wp_mobile_detector_upload_execute                              2016-05-31       excellent  Yes    WordPress WP Mobile Detector 3.5 Shell Upload
+   683  exploit/unix/webapp/wp_symposium_shell_upload                                      2014-12-11       excellent  Yes    WordPress WP Symposium 14.11 Shell Upload
+   684  exploit/multi/http/wp_plugin_fma_shortcode_unauth_rce                              2023-05-31       excellent  Yes    Wordpress File Manager Advanced Shortcode 2.3.2 - Unauthenticated Remote Code Execution through shortcode
+   685  auxiliary/scanner/http/wordpress_multicall_creds                                                    normal     No     Wordpress XML-RPC system.multicall Credential Collector
+   686  exploit/windows/browser/dxstudio_player_exec                                       2009-06-09       excellent  No     Worldweaver DX Studio Player shell.execute() Command Execution
+   687  exploit/multi/http/x7chat2_php_exec                                                2014-10-27       excellent  Yes    X7 Chat 2.0.5 lib/message.php preg_replace() PHP Code Execution
+   688  auxiliary/dos/windows/ftp/xmeasy560_nlst                                           2008-10-13       normal     No     XM Easy Personal FTP Server 5.6.0 NLST DoS
+   689  auxiliary/dos/windows/ftp/xmeasy570_nlst                                           2009-03-27       normal     No     XM Easy Personal FTP Server 5.7.0 NLST DoS
+   690  exploit/windows/browser/xmplay_asx                                                 2006-11-21       good       No     XMPlay 3.3.0.4 (ASX Filename) Buffer Overflow
+   691  exploit/unix/webapp/xoda_file_upload                                               2012-08-21       excellent  Yes    XODA 0.4.5 Arbitrary PHP File Upload Vulnerability
+   692  exploit/windows/fileformat/xenorate_xpl_bof                                        2009-08-19       great      No     Xenorate 2.50 (.xpl) Universal Local Buffer Overflow (SEH)
+   693  exploit/windows/ftp/xftp_client_pwd                                                2010-04-22       normal     No     Xftp FTP Client 3.0 PWD Remote Buffer Overflow
+   694  exploit/windows/fileformat/xion_m3u_sehbof                                         2010-11-23       great      No     Xion Audio Player 1.0.126 Unicode Stack Buffer Overflow
+   695  exploit/windows/http/xitami_if_mod_since                                           2007-09-24       average    Yes    Xitami 2.5c2 Web Server If-Modified-Since Overflow
+   696  exploit/windows/smtp/ypops_overflow1                                               2004-09-27       average    Yes    YPOPS 0.6 Buffer Overflow
+   697  exploit/windows/browser/yahoomessenger_server                                      2007-06-05       good       No     Yahoo! Messenger 8.1.0.249 ActiveX Control Buffer Overflow
+   698  exploit/windows/browser/yahoomessenger_fvcom                                       2007-08-30       normal     No     Yahoo! Messenger YVerInfo.dll ActiveX Control Buffer Overflow
+   699  auxiliary/admin/scada/yokogawa_bkbcopyd_client                                     2014-08-09       normal     No     Yokogawa BKBCopyD.exe Client
+   700  exploit/windows/scada/yokogawa_bkbcopyd_bof                                        2014-03-10       normal     Yes    Yokogawa CENTUM CS 3000 BKBCopyD.exe Buffer Overflow
+   701  auxiliary/dos/scada/yokogawa_logsvr                                                2014-03-10       normal     No     Yokogawa CENTUM CS 3000 BKCLogSvr.exe Heap Buffer Overflow
+   702  exploit/windows/scada/yokogawa_bkhodeq_bof                                         2014-03-10       average    Yes    Yokogawa CENTUM CS 3000 BKHOdeq.exe Buffer Overflow
+   703  exploit/windows/scada/yokogawa_bkesimmgr_bof                                       2014-03-10       normal     Yes    Yokogawa CS3000 BKESimmgr.exe Buffer Overflow
+   704  exploit/windows/scada/yokogawa_bkfsim_vhfd                                         2014-05-23       normal     No     Yokogawa CS3000 BKFSim_vhfd.exe Buffer Overflow
+   705  exploit/unix/webapp/zpanel_username_exec                                           2013-06-07       excellent  Yes    ZPanel 10.0.0.2 htpasswd Module Username Command Execution
+   706  exploit/linux/http/zabbix_sqli                                                     2013-09-23       excellent  Yes    Zabbix 2.0.8 SQL Injection and Remote Code Execution
+   707  exploit/unix/misc/zabbix_agent_exec                                                2009-09-10       excellent  No     Zabbix Agent net.tcp.listen Command Injection
+   708  exploit/windows/http/zentao_pro_rce                                                2020-06-20       excellent  Yes    ZenTao Pro 8.8.2 Remote Code Execution
+   709  exploit/windows/fileformat/zinfaudioplayer221_pls                                  2004-09-24       good       No     Zinf Audio Player 2.2.1 (PLS File) Stack Buffer Overflow
+   710  exploit/unix/http/zivif_ipcheck_exec                                               2017-09-01       excellent  Yes    Zivif Camera iptest.cgi Blind Remote Command Execution
+   711  exploit/windows/http/edirectory_imonitor                                           2005-08-11       great      No     eDirectory 8.7.3 iMonitor Remote Stack Buffer Overflow
+   712  exploit/multi/http/extplorer_upload_exec                                           2012-12-31       excellent  Yes    eXtplorer v2.1 Arbitrary File Upload Vulnerability
+   713  exploit/windows/fileformat/ezip_wizard_bof                                         2009-03-09       good       No     eZip Wizard 3.0 Stack Buffer Overflow
+   714  exploit/windows/ftp/freeftpd_user                                                  2005-11-16       average    Yes    freeFTPd 1.0 Username Overflow
+   715  exploit/windows/fileformat/galan_fileformat_bof                                    2009-12-07       normal     No     gAlan 0.2.1 Buffer Overflow
+   716  exploit/unix/webapp/mybb_backdoor                                                  2011-10-06       excellent  Yes    myBB 1.6.4 Backdoor Arbitrary Command Execution
+   717  exploit/linux/http/op5_config_exec                                                 2016-04-08       excellent  Yes    op5 v7.1.9 Configuration Command Execution
+   718  exploit/unix/webapp/oscommerce_filemanager                                         2009-08-31       excellent  No     osCommerce 2.2 Arbitrary PHP Code Execution
+   719  exploit/unix/webapp/phpbb_highlight                                                2004-11-12       excellent  No     phpBB viewtopic.php Arbitrary Code Execution
+   720  exploit/unix/webapp/phpcollab_upload_exec                                          2017-09-29       excellent  Yes    phpCollab 2.5.1 Unauthenticated File Upload
+   721  exploit/multi/http/phpfilemanager_rce                                              2015-08-28       excellent  Yes    phpFileManager 0.9.8 Remote Code Execution
+   722  exploit/multi/http/phpmyadmin_3522_backdoor                                        2012-09-25       normal     No     phpMyAdmin 3.5.2.2 server_sync.php Backdoor
+   723  exploit/multi/http/phpscheduleit_start_date                                        2008-10-01       excellent  Yes    phpScheduleIt PHP reserve.php start_date Parameter Arbitrary Code Injection
+   724  exploit/multi/http/qdpm_authenticated_rce                                          2020-11-21       excellent  Yes    qdPM 9.1 Authenticated Arbitrary PHP File Upload (RCE)
+   725  exploit/linux/local/rc_local_persistence                                           1980-10-01       excellent  No     rc.local Persistence
+   726  exploit/multi/http/vbulletin_unserialize                                           2015-11-04       excellent  Yes    vBulletin 5.1.2 Unserialize Code Execution
+   727  exploit/multi/http/vbulletin_widget_template_rce                                   2020-08-09       excellent  Yes    vBulletin 5.x /ajax/render/widget_tabbedcontainer_tab_panel PHP remote code execution.
+   728  exploit/unix/webapp/vbulletin_vote_sqli_exec                                       2013-03-25       excellent  Yes    vBulletin index.php/ajax/api/reputation/vote nodeid Parameter SQL Injection
+   729  exploit/unix/webapp/php_vbulletin_template                                         2005-02-25       excellent  Yes    vBulletin misc.php Template Name Arbitrary Code Execution
+   730  exploit/multi/http/vtiger_php_exec                                                 2013-10-30       excellent  Yes    vTigerCRM v5.4.0/v5.3.0 Authenticated Remote Code Execution
+   731  exploit/windows/fileformat/xradio_xrl_sehbof                                       2011-02-08       normal     No     xRadio 0.95b Buffer Overflow

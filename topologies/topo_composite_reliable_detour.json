@@ -1,0 +1,26 @@
+{
+  "_comment": "COMPOSITE SHOWCASE #1 - 'Reliable detour'. Composite (max prod p_h) prefers a LONGER, high-reliability path over the SHORT but unreliable shortcut that the shortest-path metric selects. Expected: shortest-path -> attacker->.40->goal (len 2, P=0.27); composite -> attacker->A->C->E->goal (len 4, P=0.866).",
+  "hosts": [
+    { "id": "172.20.0.10", "role": "dmz-ftp" },
+    { "id": "172.20.0.40", "role": "dmz-http" },
+    { "id": "172.21.0.20", "role": "relay-irc" },
+    { "id": "172.21.0.30", "role": "relay-ssh-weak" },
+    { "id": "172.22.0.10", "role": "app-samba" },
+    { "id": "172.23.0.50", "role": "db-goal" }
+  ],
+  "edges": [
+    { "src": "attacker",    "dst": "172.20.0.10", "port": 21,   "service": "ftp",        "cvss": 9.8, "exploit": "unix/ftp/vsftpd_234_backdoor",            "version": "vsftpd 2.3.4" },
+    { "src": "attacker",    "dst": "172.20.0.40", "port": 80,   "service": "http",       "cvss": 9.0, "exploit": "multi/http/apache_mod_cgi_bash_env_exec", "version": "Apache 2.2.8 mod_cgi" },
+
+    { "src": "172.20.0.40", "dst": "172.23.0.50", "port": 22,   "service": "ssh",        "cvss": 3.0, "impact": 9.8, "exploit": "auxiliary/scanner/ssh/ssh_login",   "pivot_network": "172.23.0.0/24", "_note": "tempting SHORT shortcut, low reliability" },
+    { "src": "172.20.0.40", "dst": "172.21.0.30", "port": 22,   "service": "ssh",        "cvss": 4.0, "impact": 4.0, "exploit": "auxiliary/scanner/ssh/ssh_login",   "pivot_network": "172.21.0.0/24" },
+    { "src": "172.21.0.30", "dst": "172.23.0.50", "port": 5432, "service": "postgresql", "cvss": 5.0, "impact": 9.8, "exploit": "linux/postgres/postgres_payload",   "pivot_network": "172.23.0.0/24" },
+
+    { "src": "172.20.0.10", "dst": "172.21.0.20", "port": 6667, "service": "irc",        "cvss": 9.8, "impact": 7.0, "exploit": "unix/irc/unreal_ircd_3281_backdoor", "pivot_network": "172.21.0.0/24", "version": "UnrealIRCd 3.2.8.1" },
+    { "src": "172.20.0.40", "dst": "172.21.0.20", "port": 6667, "service": "irc",        "cvss": 9.8, "impact": 7.0, "exploit": "unix/irc/unreal_ircd_3281_backdoor", "pivot_network": "172.21.0.0/24", "version": "UnrealIRCd 3.2.8.1" },
+    { "src": "172.21.0.20", "dst": "172.23.0.50", "port": 5432, "service": "postgresql", "cvss": 6.0, "impact": 9.8, "exploit": "linux/postgres/postgres_payload",   "pivot_network": "172.23.0.0/24", "_note": "MEDIUM shortcut from relay" },
+    { "src": "172.21.0.20", "dst": "172.22.0.10", "port": 445,  "service": "samba",      "cvss": 9.5, "impact": 8.0, "exploit": "multi/samba/usermap_script",         "pivot_network": "172.22.0.0/24", "version": "Samba 3.0.20" },
+    { "src": "172.22.0.10", "dst": "172.23.0.50", "port": 21,   "service": "ftp",        "cvss": 9.5, "impact": 9.8, "exploit": "unix/ftp/vsftpd_234_backdoor",       "pivot_network": "172.23.0.0/24", "version": "vsftpd 2.3.4" }
+  ],
+  "goal": "172.23.0.50"
+}

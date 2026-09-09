@@ -1,0 +1,40 @@
+{
+  "_comment": "Pivoting topology. Attacker (172.20.0.1) reaches H1 on the DMZ segment only. H2 lives on an isolated internal segment reachable only through H1. The master agent must set up an MSF autoroute through H1's Meterpreter session before attacking H2.",
+  "hosts": [
+    {
+      "id":   "172.20.0.10",
+      "os":   "Linux",
+      "role": "h1-vsftpd"
+    },
+    {
+      "id":   "172.21.0.20",
+      "os":   "Linux",
+      "role": "h2-unrealirc"
+    }
+  ],
+  "edges": [
+    {
+      "src":     "attacker",
+      "dst":     "172.20.0.10",
+      "exploit": "vsftpd_234_backdoor",
+      "cvss":    9.8,
+      "impact":  7.0,
+      "port":    21,
+      "service": "ftp",
+      "version": "vsftpd 2.3.4"
+    },
+    {
+      "src":          "172.20.0.10",
+      "dst":          "172.21.0.20",
+      "exploit":      "unreal_ircd_3281_backdoor",
+      "cvss":         9.8,
+      "impact":       9.8,
+      "port":         6667,
+      "service":      "irc",
+      "version":      "UnrealIRCd 3.2.8.1",
+      "pivot_network": "172.21.0.0/24",
+      "pivot_src_ip":  "172.21.0.10"
+    }
+  ],
+  "goal": "172.21.0.20"
+}

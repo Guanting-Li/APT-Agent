@@ -1,0 +1,16 @@
+root
+admin admin123
+root toor
+user user123
+guest guest
+test test123
+john doe2025
+alice alicepass
+bob password
+manager letmein
+support support2025
+msfadmin msfadmin
+postgre postgre
+admin admin
+postgres postgres
+pi raspberry

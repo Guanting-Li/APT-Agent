@@ -1,0 +1,38 @@
+{
+  "_comment": "Flat Docker test topology. Both H1 and H2 are reachable directly from the attacker (Kali host at 172.20.0.1). Master agent attacks them sequentially: H1 first (FTP), then H2 (IRC).",
+  "hosts": [
+    {
+      "id":   "172.20.0.10",
+      "os":   "Linux",
+      "role": "h1-vsftpd"
+    },
+    {
+      "id":   "172.20.0.20",
+      "os":   "Linux",
+      "role": "h2-unrealirc"
+    }
+  ],
+  "edges": [
+    {
+      "src":     "attacker",
+      "dst":     "172.20.0.10",
+      "exploit": "vsftpd_234_backdoor",
+      "cvss":    9.8,
+      "impact":  7.0,
+      "port":    21,
+      "service": "ftp",
+      "version": "vsftpd 2.3.4"
+    },
+    {
+      "src":     "172.20.0.10",
+      "dst":     "172.20.0.20",
+      "exploit": "unreal_ircd_3281_backdoor",
+      "cvss":    9.8,
+      "impact":  9.8,
+      "port":    6667,
+      "service": "irc",
+      "version": "UnrealIRCd 3.2.8.1"
+    }
+  ],
+  "goal": "172.20.0.20"
+}

@@ -1,0 +1,22 @@
+{
+  "hosts": [
+    {
+      "id": "192.168.102.197",
+      "os": "Linux",
+      "role": "metasploitable"
+    }
+  ],
+  "edges": [
+    {
+      "src":     "attacker",
+      "dst":     "192.168.102.197",
+      "exploit": "vsftpd_234_backdoor",
+      "cvss":    9.8,
+      "impact":  9.8,
+      "port":    21,
+      "service": "ftp",
+      "version": "vsftpd 2.3.4"
+    }
+  ],
+  "goal": "192.168.102.197"
+}

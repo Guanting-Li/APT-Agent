@@ -1,0 +1,23 @@
+{
+  "hosts": [
+    { "id": "172.20.0.10", "role": "dmz-ftp" },
+    { "id": "172.21.0.30", "role": "internal-ssh" },
+    { "id": "172.23.0.30", "role": "db-postgres" },
+    { "id": "172.23.0.50", "role": "fileserver-samba-goal" }
+  ],
+  "edges": [
+    { "src": "attacker", "dst": "172.20.0.10", "port": 21, "service": "ftp",
+      "version": "vsftpd 2.3.4 (Metasploitable2)", "cvss": 10.0,
+      "exploit": "unix/ftp/vsftpd_234_backdoor" },
+    { "src": "172.20.0.10", "dst": "172.21.0.30", "port": 22, "service": "ssh",
+      "version": "OpenSSH 4.7p1 (Metasploitable2, weak creds)", "cvss": 7.5,
+      "exploit": "auxiliary/scanner/ssh/ssh_login", "pivot_network": "172.21.0.0/24" },
+    { "src": "172.21.0.30", "dst": "172.23.0.30", "port": 5432, "service": "postgresql",
+      "version": "PostgreSQL 8.3 (Metasploitable2, weak creds)", "cvss": 7.5,
+      "exploit": "linux/postgres/postgres_payload", "pivot_network": "172.23.0.0/24" },
+    { "src": "172.23.0.30", "dst": "172.23.0.50", "port": 445, "service": "samba",
+      "version": "Samba 3.0.20 (Metasploitable2)", "cvss": 6.0,
+      "exploit": "multi/samba/usermap_script" }
+  ],
+  "goal": "172.23.0.50"
+}

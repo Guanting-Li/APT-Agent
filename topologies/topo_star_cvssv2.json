@@ -1,0 +1,61 @@
+{
+  "hosts": [
+    { "id": "172.20.0.40", "role": "hub-http" },
+    { "id": "172.21.0.10", "role": "leaf-drupal" },
+    { "id": "172.21.0.20", "role": "leaf-irc" },
+    { "id": "172.21.0.30", "role": "leaf-distcc" },
+    { "id": "172.21.0.60", "role": "leaf-samba-goal" }
+  ],
+  "edges": [
+    {
+      "src": "attacker",
+      "dst": "172.20.0.40",
+      "port": 80,
+      "service": "http",
+      "version": "Apache 2.2.8 mod_cgi",
+      "cvss": 10.0,
+      "exploit": "multi/http/apache_mod_cgi_bash_env_exec"
+    },
+    {
+      "src": "172.20.0.40",
+      "dst": "172.21.0.10",
+      "port": 80,
+      "service": "http",
+      "version": "Drupal 7.57",
+      "cvss": 7.5,
+      "exploit": "unix/webapp/drupal_drupalgeddon2",
+      "pivot_network": "172.21.0.0/24"
+    },
+    {
+      "src": "172.20.0.40",
+      "dst": "172.21.0.20",
+      "port": 6667,
+      "service": "irc",
+      "version": "UnrealIRCd 3.2.8.1",
+      "cvss": 7.5,
+      "exploit": "unix/irc/unreal_ircd_3281_backdoor",
+      "pivot_network": "172.21.0.0/24"
+    },
+    {
+      "src": "172.20.0.40",
+      "dst": "172.21.0.30",
+      "port": 3632,
+      "service": "distcc",
+      "version": "distcc 2.x",
+      "cvss": 9.3,
+      "exploit": "unix/misc/distcc_exec",
+      "pivot_network": "172.21.0.0/24"
+    },
+    {
+      "src": "172.20.0.40",
+      "dst": "172.21.0.60",
+      "port": 445,
+      "service": "samba",
+      "version": "Samba 3.0.20",
+      "cvss": 6.0,
+      "exploit": "multi/samba/usermap_script",
+      "pivot_network": "172.21.0.0/24"
+    }
+  ],
+  "goal": "172.21.0.60"
+}

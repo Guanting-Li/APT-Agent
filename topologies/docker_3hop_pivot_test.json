@@ -1,0 +1,57 @@
+{
+  "_comment": "Three-hop pivot topology. Attacker reaches H1 (DMZ) directly; H2 is on an isolated internal segment reachable only through H1; H3 is on a deep-internal segment reachable only through H2 (chained pivot). Networks: 172.20.0.0/24 (DMZ), 172.21.0.0/24 (internal, internal:true), 172.22.0.0/24 (deep-internal, internal:true).",
+  "hosts": [
+    {
+      "id":   "172.20.0.10",
+      "os":   "Linux",
+      "role": "h1-vsftpd"
+    },
+    {
+      "id":   "172.21.0.20",
+      "os":   "Linux",
+      "role": "h2-unrealirc"
+    },
+    {
+      "id":   "172.22.0.30",
+      "os":   "Linux",
+      "role": "h3-unrealirc-deep"
+    }
+  ],
+  "edges": [
+    {
+      "src":     "attacker",
+      "dst":     "172.20.0.10",
+      "exploit": "vsftpd_234_backdoor",
+      "cvss":    9.8,
+      "impact":  7.0,
+      "port":    21,
+      "service": "ftp",
+      "version": "vsftpd 2.3.4"
+    },
+    {
+      "src":          "172.20.0.10",
+      "dst":          "172.21.0.20",
+      "exploit":      "unreal_ircd_3281_backdoor",
+      "cvss":         9.8,
+      "impact":       9.8,
+      "port":         6667,
+      "service":      "irc",
+      "version":      "UnrealIRCd 3.2.8.1",
+      "pivot_network": "172.21.0.0/24",
+      "pivot_src_ip":  "172.21.0.10"
+    },
+    {
+      "src":          "172.21.0.20",
+      "dst":          "172.22.0.30",
+      "exploit":      "unreal_ircd_3281_backdoor",
+      "cvss":         9.8,
+      "impact":       9.8,
+      "port":         6667,
+      "service":      "irc",
+      "version":      "UnrealIRCd 3.2.8.1",
+      "pivot_network": "172.22.0.0/24",
+      "pivot_src_ip":  "172.22.0.20"
+    }
+  ],
+  "goal": "172.22.0.30"
+}

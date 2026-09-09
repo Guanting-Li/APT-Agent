@@ -1,0 +1,11 @@
+{
+  "hosts": [
+    { "id": "10.10.0.10", "role": "ssh-entry-pivot" },
+    { "id": "10.20.0.20", "role": "ssh-goal" }
+  ],
+  "edges": [
+    { "src": "attacker",    "dst": "10.10.0.10", "port": 22, "service": "ssh", "version": "OpenSSH (root:toor)", "cvss": 9.0, "exploit": "auxiliary/scanner/ssh/ssh_login" },
+    { "src": "10.10.0.10",  "dst": "10.20.0.20", "port": 22, "service": "ssh", "version": "OpenSSH (root:toor)", "cvss": 7.5, "exploit": "auxiliary/scanner/ssh/ssh_login", "pivot_network": "10.20.0.0/24" }
+  ],
+  "goal": "10.20.0.20"
+}

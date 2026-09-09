@@ -1,0 +1,63 @@
+{
+  "_comment": "Three-host network requiring pivot through a DMZ webserver to reach an internal fileserver.",
+  "hosts": [
+    {
+      "id":   "10.0.1.5",
+      "os":   "Linux",
+      "role": "dmz-webserver"
+    },
+    {
+      "id":   "10.0.2.10",
+      "os":   "Linux",
+      "role": "internal-db"
+    },
+    {
+      "id":   "10.0.2.20",
+      "os":   "Windows",
+      "role": "fileserver-goal"
+    }
+  ],
+  "edges": [
+    {
+      "src":     "attacker",
+      "dst":     "10.0.1.5",
+      "exploit": "apache_mod_cgi_bash_env",
+      "cvss":    10.0,
+      "impact":  7.0,
+      "port":    80,
+      "service": "http",
+      "version": "Apache httpd 2.2.8"
+    },
+    {
+      "src":     "10.0.1.5",
+      "dst":     "10.0.2.10",
+      "exploit": "mysql_empty_password",
+      "cvss":    7.5,
+      "impact":  9.0,
+      "port":    3306,
+      "service": "mysql",
+      "version": "MySQL 5.0.51a"
+    },
+    {
+      "src":     "10.0.1.5",
+      "dst":     "10.0.2.20",
+      "exploit": "ms17_010_eternalblue",
+      "cvss":    9.3,
+      "impact":  10.0,
+      "port":    445,
+      "service": "samba",
+      "version": "Microsoft Windows Server 2008 R2"
+    },
+    {
+      "src":     "10.0.2.10",
+      "dst":     "10.0.2.20",
+      "exploit": "ms17_010_eternalblue",
+      "cvss":    9.3,
+      "impact":  10.0,
+      "port":    445,
+      "service": "samba",
+      "version": "Microsoft Windows Server 2008 R2"
+    }
+  ],
+  "goal": "10.0.2.20"
+}
