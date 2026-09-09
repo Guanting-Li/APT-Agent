@@ -111,7 +111,7 @@ def _logpath(legacy_name: str, suffix: str) -> str:
 HOP_OBJECTIVE = os.environ.get("HOP_OBJECTIVE", "flag").strip().lower()
 WORDLIST_PATH  = os.environ.get(
     "WORDLIST_PATH",
-    "/home/will/script_kiddie_replica/script_kiddie_replica_code/userpass.txt",
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "userpass.txt"),
 ).strip()
 
 # Optional SSH creds for the target, used only to clear a stale bind-shell port
