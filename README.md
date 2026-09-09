@@ -19,7 +19,7 @@ against an authoritative Metasploit-module database), the operational state
 |------|-------------|
 | `APT-Agent.py` | Per-hop execution agent (RECON → EXPLOIT → EXFILTRATE) for a single target host. Launched as a subprocess by the orchestrator. |
 | `run_harmat_campaign.py` | Multi-host campaign orchestrator: HARM graph planning, per-hop invocation, and cross-subnet pivoting. |
-| `harmat/` | Vendored HARM analysis library (Enoch et al.), used unmodified for graph-based path selection. MIT-licensed — see `harmat/LICENSE.txt`. |
+| `harmat/` | Vendored HARM analysis library (Enoch et al.), used unmodified for graph-based path selection. Cython/C++ source; build with `setup.py`. MIT-licensed — see `harmat/LICENSE.txt`. |
 | `topologies/` | The five network topologies evaluated in the paper: linear chain, dumbbell, star, Equifax-inspired, and enterprise. Each JSON specifies hosts, reachability/exploit edges (service, version, CVSS, Metasploit module), the `pivot_network` for internal edges, and the goal host. |
 | `modules_db_dump.sql` | MySQL dump of the `art_agent` module database used for entity rectification (the `modules` table of validated Metasploit modules). |
 | `data/` | Module-name list and credential wordlists used by rectification and brute-force-dependent services. |
@@ -29,19 +29,26 @@ against an authoritative Metasploit-module database), the operational state
 
 - Linux with **Metasploit Framework** (`msfrpcd` running for RPC access)
 - **MySQL** (for the module-rectification database)
-- Python 3.11 or 3.12 (prebuilt `harmat` extensions are included for these; rebuild
-  from the Cython sources in `harmat/` for other versions)
+- Python 3.4+ (tested on 3.11/3.12)
+- To build the `harmat` extensions: **Cython**, a **C++14 compiler**, and the
+  **Boost Graph Library** headers (e.g. `apt install libboost-graph-dev`)
 - Python packages: LangChain, `mysql-connector-python`, `rapidfuzz`,
   `python-dotenv`, and an OpenAI-compatible LLM client. Pin versions to your
   environment (`Pipfile` is a starting point).
 
 ## Setup
 
-1. **Configuration.** Copy `.env.example` to `.env` and fill in your values
+1. **Build the planner.** Compile the vendored `harmat` extensions in place:
+   ```bash
+   pip install cython
+   pip install .          # or: python setup.py build_ext --inplace
+   ```
+
+2. **Configuration.** Copy `.env.example` to `.env` and fill in your values
    (OpenAI key, Metasploit RPC password/port, MySQL connection, lab IPs).
    `.env` is gitignored — never commit real keys.
 
-2. **Rectification database.** Create the database and import the dump
+3. **Rectification database.** Create the database and import the dump
    (the dump contains the tables only, so create/select the database first):
    ```bash
    mysqladmin -u <user> -p create art_agent
@@ -51,11 +58,11 @@ against an authoritative Metasploit-module database), the operational state
    that `APT-Agent.py` queries at startup to rectify generated module names.
    Point `MYSQL_*` in `.env` at this database.
 
-3. **Targets.** Build the vulnerable target environment following `TARGETS.md`
+4. **Targets.** Build the vulnerable target environment following `TARGETS.md`
    (services, versions, and isolated network tiers). The per-host details for
    each scenario are in the corresponding `topologies/*.json`.
 
-4. **Metasploit RPC.** Start the RPC daemon so the agent can drive Metasploit:
+5. **Metasploit RPC.** Start the RPC daemon so the agent can drive Metasploit:
    ```bash
    msfrpcd -P <MSF_PASSWORD> -p <MSF_PORT> -n
    ```

@@ -13,3 +13,8 @@ __pycache__/
 results/
 logs/
 *.log
+
+# Compiled harmat extensions / build artifacts
+*.so
+build/
+*.egg-info/
