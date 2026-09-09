@@ -13,9 +13,9 @@ The only code added here beyond harmat is:
 
 Usage
 -----
-    python3 run_harmat_campaign.py --topology topologies/example_linear.json
-    python3 run_harmat_campaign.py --topology topologies/docker_pivot_test.json --model gpt-4o
-    python3 run_harmat_campaign.py --topology topologies/example_diverging.json --strategy shortest --dry-run
+    python3 run_harmat_campaign.py --topology topologies/topo_linear_chain.json
+    python3 run_harmat_campaign.py --topology topologies/topo_dumbbell.json --model gpt-4o
+    python3 run_harmat_campaign.py --topology topologies/topo_star.json --strategy shortest --dry-run
 """
 
 import argparse

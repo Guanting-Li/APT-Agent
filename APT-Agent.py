@@ -2295,11 +2295,11 @@ def main():
             print("Connected to MySQL server")
             cursor = connection.cursor()
             # Fetch all modules once at startup to avoid connection timeouts mid-loop.
-            # Rectify against the curated `excellent_modules` table (high-rank,
-            # service-relevant subset) rather than the full `modules` catalog.
-            cursor.execute("SELECT module_name FROM excellent_modules;")
+            # Rectify generated entities against the `modules` table (the validated
+            # Metasploit-module catalogue loaded from modules_db_dump.sql).
+            cursor.execute("SELECT module_name FROM modules;")
             all_db_modules = [r[0] for r in cursor.fetchall()]
-            print(f"[INFO] Loaded {len(all_db_modules)} modules from DB (excellent_modules).")
+            print(f"[INFO] Loaded {len(all_db_modules)} modules from DB (modules table).")
     except mysql.connector.Error as err:
         print(f"[INFO] MySQL unavailable ({err}), continuing without module DB.")
 
